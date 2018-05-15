@@ -1,0 +1,10 @@
+			Cấu hình các tham số của hệ thống:
+1/Cài đặt : Apache Solr
+2/Cài đặt: Laravel Framework
+3/Crawl dữ liệu từ trang :dantri.com
+4/Xây dựng máy tìm kiếm
+	+ Tìm có dấu
+	+ Tìm theo ngữ nghĩa
+5/Viết log server để thu thập thông tin từ client
+6/Sử dụng log để cải thiện hiệu năng của hệ thống
+
