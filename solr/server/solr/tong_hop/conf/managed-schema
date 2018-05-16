@@ -250,11 +250,13 @@
   </fieldType>
   <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100" multiValued="true">
     <analyzer type="index">
+      <charFilter class="solr.MappingCharFilterFactory" mapping="mapping.txt"/>
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
     <analyzer type="query">
+      <charFilter class="solr.MappingCharFilterFactory" mapping="mapping.txt"/>
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/>
@@ -486,10 +488,7 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
-  <copyField source="Origin" dest="Origin_str" maxChars="256"/>
-  <copyField source="Content" dest="Content_str" maxChars="256"/>
-  <copyField source="Author" dest="Author_str" maxChars="256"/>
-  <copyField source="Title" dest="Title_str" maxChars="256"/>
-  <copyField source="Time" dest="Time_str" maxChars="256"/>
-  <copyField source="Url" dest="Url_str" maxChars="256"/>
+  <copyField source="*" dest="_text_" maxChars="256"/>
+  <copyField source="Author" dest="_text_" maxChars="256"/>
+  <copyField source="Time" dest="_text_" maxChars="256"/>
 </schema>

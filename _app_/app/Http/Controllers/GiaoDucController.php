@@ -75,10 +75,12 @@ class GiaoDucController extends Controller
 
         // Phan trang ket qua tim kiem
         $page = Input::get('page',1);
-        $perpage = 5;
+        $perpage = 10;
         $offset = ($page*$perpage) - $perpage;
         $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
         // dd($request->query());
+        $recommend_keys = "";
+
         return view('giao_duc.result',
                     [
                     'flag' => $flag,
@@ -92,7 +94,7 @@ class GiaoDucController extends Controller
         );
     }
     public function get_real_time_key(Request $request){
-        
+
     }
     
 }

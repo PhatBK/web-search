@@ -11,6 +11,8 @@ use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\RequestException;
 use App\Models\KeySearch;
 use function GuzzleHttp\json_decode;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\View;
 
 use NlpTools\Tokenizers\WhitespaceTokenizer;
 use NlpTools\Similarity\CosineSimilarity;
@@ -28,6 +30,8 @@ class SolrController extends Controller
 
         $key = $request->search;
         // dd(split_key_search($key));
+        $spell=$this->spell_check($request->search);
+        dd($spell);
 
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
         /* 
@@ -37,13 +41,14 @@ class SolrController extends Controller
          * Ahihi
         */
         // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=100');
+        $response_content   = $client->request('GET', 'select?q='.$key.'&rows=100');
+
         $response_title     = $client->request('GET', 'select?df=Title&q='.$key.'&rows=100');
         $response_url       = $client->request('GET', 'select?df=Url&q='.$key.'&rows=100');
-        $response_all       = $client->request('GET', 'select?q='.$key.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content = $response_content->getBody();
+
         $content_title = $response_title->getBody();
         $content_url = $response_url->getBody();
         /*
@@ -61,6 +66,7 @@ class SolrController extends Controller
         $numFound       = $response['numFound'];
         $start          = $response['start'];
         $docs           = $response['docs'];
+        // dd($docs);
         $numResult      = $numFound ;
         $timeSearch     = $QTime;
         $flag = true;
@@ -71,7 +77,7 @@ class SolrController extends Controller
         }
         // Phần phân trang kết quả tìm kiếm
         $page = Input::get('page',1);
-        $perpage = 5;
+        $perpage = 10;
         $offset = ($page*$perpage) - $perpage;
         $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
 
@@ -133,6 +139,39 @@ class SolrController extends Controller
          
         dd($aris_to_archi,$aris_to_albert);
 
+    }
+    public function jaccard($string1,$string2){
+        $arr1 = preg_split('/\s+/', $string1, -1, PREG_SPLIT_NO_EMPTY);
+        $arr2 = preg_split('/\s+/', $string2, -1, PREG_SPLIT_NO_EMPTY);
+        $arr_giao_temp=array();
+        for($i=0;$i<count($arr1);$i++){
+            for($j=0;$j<count($arr2);$j++){
+                if($arr1[$i]==$arr2[$j]){
+                    array_push($arr_giao_temp,$arr1[$i]);
+                }
+            }
+        }
+        $arr_giao=array_unique($arr_giao_temp);
+        $arr_hop_temp=array();
+        for($i=0;$i<count($arr1);$i++){
+            array_push($arr_hop_temp,$arr1[$i]);
+        }
+        for($i=0;$i<count($arr2);$i++){
+            array_push($arr_hop_temp,$arr2[$i]);
+        }
+        $arr_hop=array_unique($arr_hop_temp);
+        $jaccard=count($arr_giao)/count($arr_hop);
+        return $jaccard;
+    }
+    public function spell_check($string){
+        $tukhoa_suggest=DB::table('key_search')->select(DB::raw('key,count(*) as soluong'))->groupBy('key')->orderBy('soluong','desc')->take(20)->get();
+        foreach ($tukhoa_suggest as $sg){
+            $jaccard=$this->jaccard($sg->tukhoa,$string);
+            if(0.55<$jaccard and $jaccard<1){
+                return $sg->tukhoa;
+            }
+        }
+        return null;
     }
 
     public function get_thongke(){

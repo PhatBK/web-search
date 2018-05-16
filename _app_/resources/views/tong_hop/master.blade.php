@@ -128,7 +128,7 @@
                 // $("#key_search").autocomplete({
                 //     hints: response
                 // });
-                console.log(str);
+                // console.log(str);
                 // $("#key_search").easyAutocomplete(response);
                 // $("#real_time_result").html(str);
                 // document.getElementById('suggestions').innerHTML=str;
