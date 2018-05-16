@@ -12,6 +12,9 @@ use GuzzleHttp\Exception\RequestException;
 use App\Models\KeySearch;
 use function GuzzleHttp\json_decode;
 
+use NlpTools\Tokenizers\WhitespaceTokenizer;
+use NlpTools\Similarity\CosineSimilarity;
+
 class SolrController extends Controller
 {
     
@@ -168,6 +171,9 @@ class SolrController extends Controller
     }
 
 
+
+
+    // 15/05/2018 
     // Sử dụng cơ sở dữ liệu về kinh tế,giáo dục hỗn hợp
     // ae làm trên cái này nhé
     public function get_view_tong_hop(){
@@ -176,6 +182,8 @@ class SolrController extends Controller
     public function get_solr_tong_hop_api(Request $request){
 
         $key = $request->search;
+        // dd(split_key_search($key));
+
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
         /* 
          * Phần xây dựng các truy vấn khác nhau
@@ -211,12 +219,12 @@ class SolrController extends Controller
         $numResult      = $numFound ;
         $timeSearch     = $QTime;
         $flag = true;
-
-        $thongke = new KeySearch;
-        $thongke->key = $request->search;
-        $thongke->save();
-
-
+        if($request->search != "" && $request->search != " "){
+            $thongke = new KeySearch;
+            $thongke->key = $request->search;
+            $thongke->save();
+        }
+        
         return view('tong_hop.result',
                     [
                     'flag' => $flag,
@@ -234,41 +242,48 @@ class SolrController extends Controller
         $data = [];
         $i = 0;
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
-        /* 
-         * Phần xây dựng các truy vấn khác nhau
-         * Mỗi Truy vấn là một bộ tham số khác nhau
-         * Cần xây dựng một cơ số truy vấn để vẽ đường cong đánh giá
-         * Ahihi
-        */
-        // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Title&q='.$key.'&rows=10');
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=5');
         $content_content = $response_content->getBody();
         $results        = json_decode($content_content->getContents(),true);
 
         $response       = $results['response'];
         $docs           = $response['docs'];
         foreach ($docs as $doc) {
-            $i ++;
-            $data[$i] = $doc['Title'][0];
-
+            // $data = $doc['Title'][0];
+            array_push($data,$doc['Title'][0]);
         }
         
-        return response()->json($data);
+        return response()->json($data,200);
     }
-
-
-    public function get_themdau(){
+    
+    public function get_NLP(){
         
-    }
-    public function rank_result_my(){
+        function getWikipediaPage($page) {
+            ini_set('user_agent', 'NlpToolsTest/1.0 (tests@php-nlp-tools.com)');
+            $page = json_decode(file_get_contents("http://en.wikipedia.org/w/api.php?format=json&action=parse&page=".urlencode($page)),true);
+            return preg_replace('/\s+/',' ',strip_tags($page['parse']['text']['*']));
+        }
+        $tokenizer = new WhitespaceTokenizer();
+        $sim = new CosineSimilarity();
+         
+        $aris = $tokenizer->tokenize(getWikipediaPage('Aristotle'));
+        $archi = $tokenizer->tokenize(getWikipediaPage('Archimedes'));
+        $einstein = $tokenizer->tokenize(getWikipediaPage('Albert Einstein'));
+         
+        $aris_to_archi = $sim->similarity(
+            $aris,
+            $archi
+        );
+         
+        $aris_to_albert = $sim->similarity(
+            $aris,
+            $einstein
+        );
+         
+        dd($aris_to_archi,$aris_to_albert);
 
     }
-    public function post_search(){
 
-    }
-    public function get_cookie(){
-
-    }
     public function get_thongke(){
         $key_searchs = KeySearch::all();
         dd($key_searchs);

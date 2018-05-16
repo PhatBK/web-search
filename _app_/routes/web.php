@@ -14,7 +14,7 @@
 
 // Get view
 Route::get('/','SolrController@get_view_giao_duc');
-
+Route::get('demo/nlp','SolrController@get_NLP');
 
 
 // Data giao duc
