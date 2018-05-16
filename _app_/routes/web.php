@@ -18,9 +18,9 @@ Route::get('demo/nlp','SolrController@get_NLP');
 
 
 // Data giao duc
-Route::get('solr/search/giao_duc','SolrController@get_view_giao_duc');
-Route::post('solr/api/post/giao_duc','SolrController@post_solr_giao_duc_api');
-Route::get('solr/api/get/giao_duc','SolrController@get_solr_giao_duc_api');
+Route::get('solr/search/giao_duc','GiaoDucController@get_view_giao_duc');
+Route::post('solr/api/post/giao_duc','GiaoDucController@post_solr_giao_duc_api');
+Route::get('solr/api/get/giao_duc','GiaoDucController@get_solr_giao_duc_api');
 
 // Data tong hop
 Route::get('solr/search/tong_hop','SolrController@get_view_tong_hop');

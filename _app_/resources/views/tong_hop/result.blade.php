@@ -3,6 +3,8 @@
 <div class="container">
     <hr>
     <i>Khoảng: &nbsp; <u>{{ $numResult }}</u> &nbsp;kết quả (khoảng:&nbsp;<u>{{ $timeSearch }}</u>&nbsp;giây)</i><br><br>
+    <div style="text-align: center;">{!! $docs->links() !!}</div> 
+    <br>
     @foreach ($docs as $doc)
         <div class="form-group">
             {{-- <b style="color: red;"> {{ $doc['Title'][0] }} </b><br><br> --}}
@@ -75,5 +77,6 @@
         <hr>   
     @endforeach
     {{--  <div style="text-aligin:center;">{!! $docs->links() !!}</div>  --}}
+    <div style="text-align: center;">{!! $docs->links() !!}</div> 
 </div>
 @endsection

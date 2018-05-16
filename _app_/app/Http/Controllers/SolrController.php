@@ -17,162 +17,7 @@ use NlpTools\Similarity\CosineSimilarity;
 
 class SolrController extends Controller
 {
-    
-    // Sử dụng cơ sở dữ liệu về giáo dục
-    // Cái này cũ rồi ae không làm nữa
-	public function get_view_giao_duc(){
-		return view('giao_duc.master');
-	}
-    public function post_solr_giao_duc_api(Request $request){
-
-    	$key = $request->search;
-        // dd($request->all());
-        // Create a client with a base URI
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/search/']);
-
-        /* 
-         * Phần xây dựng các truy vấn khác nhau
-         * Mỗi Truy vấn là một bộ tham số khác nhau
-         * Cần xây dựng một cơ số truy vấn để vẽ đường cong đánh giá
-         * Ahihi
-        */
-        // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=100');
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key.'&rows=100');
-
-        // lấy tất cả dữ liệu
-        $response_all = $client->request('GET', 'select?q='.$key.'&rows=100');
-
-        // Lay phan noi dung
-        $content_content = $response_content->getBody();
-        $content_title = $response_title->getBody();
-        $content_url = $response_url->getBody();
-        /*
-            chu y: json_decode($json) ==> object(stdClass)
-            con : json_decode($json,true) ==> array()
-            link:http://php.net/manual/en/function.json-decode.php
-        */
-        $results        = json_decode($content_content->getContents(),true);
-
-        // $results_title     = json_decode($content_title->getContents(),true);
-        // dd($results_1);
-        // $results_url     = json_decode($content_url->getContents(),true);
-        // dd($results_2);
-
-        $responseHeader = $results['responseHeader'];
-        $status         = $responseHeader['status'];
-        $QTime          = $responseHeader['QTime'];
-
-        $response       = $results['response'];
-        $numFound 		= $response['numFound'];
-        $start 			= $response['start'];
-        $docs 			= $response['docs'];
-        $numResult 		= $numFound ;
-        $timeSearch		= $QTime;
-        $flag = true;
-
-        // luu lai lich su search;
-        $thongke = new KeySearch;
-        $thongke->key = $request->search;
-        $thongke->save();
-
-        // Phan trang ket qua tim kiem
-        $page = Input::get('page',1);
-        $perpage = 5;
-        $offset = ($page*$perpage) - $perpage;
-        $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
-        // dd($request->query());
-
-
-        return view('giao_duc.result',
-		        	[
-		        	'flag' => $flag,
-		        	'docs'=>$docs,
-		        	'numFound'=>$numFound,
-		        	'numResult'=>$numResult,
-		        	'timeSearch' => $timeSearch,
-                    'key' => $key,
-                    'results '=> $results ,
-		            ]
-		);
-    }
-    public function get_solr_giao_duc_api(Request $request){
-        $key = $request->search;
-        // dd($request->all());
-        // Create a client with a base URI
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/search/']);
-
-        /*Phần xây dựng các truy vấn khác nhau
-         *Mỗi Truy vấn là một bộ tham số khác nhau
-         * Cần xây dựng một cơ số truy vấn để vẽ đường cong đánh giá
-         * Ahihi
-        */
-        // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=100');
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key.'&rows=100');
-
-        // lấy tất cả dữ liệu
-        $response_all = $client->request('GET', 'select?q='.$key.'&rows=100');
-        
-        // Lay phan noi dung
-        $content_content = $response_content->getBody();
-        $content_title = $response_title->getBody();
-        $content_url = $response_url->getBody();
-        /*
-            chu y: json_decode($json) ==> object(stdClass)
-            con : json_decode($json,true) ==> array()
-            link:http://php.net/manual/en/function.json-decode.php
-        */
-        $results        = json_decode($content_content->getContents(),true);
-
-        // $results_title     = json_decode($content_title->getContents(),true);
-        // dd($results_1);
-        // $results_url     = json_decode($content_url->getContents(),true);
-        // dd($results_2);
-
-        $responseHeader = $results['responseHeader'];
-        $status         = $responseHeader['status'];
-        $QTime          = $responseHeader['QTime'];
-
-        $response       = $results['response'];
-        $numFound       = $response['numFound'];
-        $start          = $response['start'];
-        $docs           = $response['docs'];
-        $numResult      = $numFound ;
-        $timeSearch     = $QTime;
-        $flag = true;
-
-        // luu lai lich su search;
-        $thongke = new KeySearch;
-        $thongke->key = $request->search;
-        $thongke->save();
-
-        // Phan trang ket qua tim kiem
-        $page = Input::get('page',1);
-        $perpage = 5;
-        $offset = ($page*$perpage) - $perpage;
-        $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
-        // dd($request->query());
-
-
-        return view('giao_duc.result',
-                    [
-                    'flag' => $flag,
-                    'docs'=>$docs,
-                    'numFound'=>$numFound,
-                    'numResult'=>$numResult,
-                    'timeSearch' => $timeSearch,
-                    'key' => $key,
-                    'results '=> $results ,
-                    ]
-        );
-    }
-
-
-
-
+   
     // 15/05/2018 
     // Sử dụng cơ sở dữ liệu về kinh tế,giáo dục hỗn hợp
     // ae làm trên cái này nhé
@@ -224,11 +69,17 @@ class SolrController extends Controller
             $thongke->key = $request->search;
             $thongke->save();
         }
-        
+        // Phần phân trang kết quả tìm kiếm
+        $page = Input::get('page',1);
+        $perpage = 5;
+        $offset = ($page*$perpage) - $perpage;
+        $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
+
+        // Phần trả lại kết quả cho giao diện
         return view('tong_hop.result',
                     [
                     'flag' => $flag,
-                    'docs'=>$docs,
+                    'docs'=>$json_doc,
                     'numFound'=>$numFound,
                     'numResult'=>$numResult,
                     'timeSearch' => $timeSearch,
@@ -266,9 +117,9 @@ class SolrController extends Controller
         $tokenizer = new WhitespaceTokenizer();
         $sim = new CosineSimilarity();
          
-        $aris = $tokenizer->tokenize(getWikipediaPage('Aristotle'));
-        $archi = $tokenizer->tokenize(getWikipediaPage('Archimedes'));
-        $einstein = $tokenizer->tokenize(getWikipediaPage('Albert Einstein'));
+        $aris = $tokenizer->tokenize(getWikipediaPage('Hom nay toi di hoc'));
+        $archi = $tokenizer->tokenize(getWikipediaPage('hom nay'));
+        $einstein = $tokenizer->tokenize(getWikipediaPage('Toi di hoc'));
          
         $aris_to_archi = $sim->similarity(
             $aris,

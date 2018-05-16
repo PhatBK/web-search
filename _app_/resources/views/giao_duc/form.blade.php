@@ -5,7 +5,7 @@
                 <div id="imaginary_container"> 
                     <img src="uploads/images/solr.png" alt="" width="350px" height="100px">
                     <br><br>
-                    <form action="solr/api/post/giao_duc" method="POST" accept-charset="utf-8">
+                    <form action="solr/api/get/giao_duc" method="GET" accept-charset="utf-8" autocomplete="off">
                         <input type="hidden" name="_token" value="{{csrf_token()}}" />
                         <div class="input-group stylish-input-group input-append">
                             <input type="text" class="form-control"  placeholder="Search" name="search" id="key_search" required="" 
