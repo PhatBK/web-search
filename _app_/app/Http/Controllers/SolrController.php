@@ -11,6 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\RequestException;
 use App\Models\KeySearch;
 use function GuzzleHttp\json_decode;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 
@@ -29,10 +30,15 @@ class SolrController extends Controller
     public function get_solr_tong_hop_api(Request $request){
 
         $key = $request->search;
-        // dd(split_key_search($key));
-        $spell=$this->spell_check($request->search);
-        dd($spell);
 
+        $spell= $this->spell_check($key);
+        
+        if($spell != null){
+            $key_s = $spell;
+        }else{
+            $key_s = $key;
+        }
+        
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
         /* 
          * Phần xây dựng các truy vấn khác nhau
@@ -41,10 +47,10 @@ class SolrController extends Controller
          * Ahihi
         */
         // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?q='.$key.'&rows=100');
+        $response_content   = $client->request('GET', 'select?q='.$key_s.'&rows=100');
 
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key.'&rows=100');
+        $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
+        $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content = $response_content->getBody();
@@ -70,17 +76,23 @@ class SolrController extends Controller
         $numResult      = $numFound ;
         $timeSearch     = $QTime;
         $flag = true;
-        if($request->search != "" && $request->search != " "){
-            $thongke = new KeySearch;
-            $thongke->key = $request->search;
-            $thongke->save();
-        }
+
         // Phần phân trang kết quả tìm kiếm
         $page = Input::get('page',1);
         $perpage = 10;
         $offset = ($page*$perpage) - $perpage;
         $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
 
+
+        // luu lai tu khoa
+        if($page == 1){
+            if($request->search != "" && $request->search != " "){
+            // $key_l  = mb_strtolower($request->search, 'UTF-8');
+                $thongke = new KeySearch;
+                $thongke->key = $request->search;
+                $thongke->save();
+            }
+        }
         // Phần trả lại kết quả cho giao diện
         return view('tong_hop.result',
                     [
@@ -91,6 +103,7 @@ class SolrController extends Controller
                     'timeSearch' => $timeSearch,
                     'key' => $key,
                     'results '=> $results ,
+                    'spell' => $spell
                     ]
         );
     }
@@ -99,7 +112,7 @@ class SolrController extends Controller
         $data = [];
         $i = 0;
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=5');
+        $response_content   = $client->request('GET', 'select?q='.$key.'&rows=5');
         $content_content = $response_content->getBody();
         $results        = json_decode($content_content->getContents(),true);
 
@@ -164,11 +177,13 @@ class SolrController extends Controller
         return $jaccard;
     }
     public function spell_check($string){
-        $tukhoa_suggest=DB::table('key_search')->select(DB::raw('key,count(*) as soluong'))->groupBy('key')->orderBy('soluong','desc')->take(20)->get();
+        // $tukhoa_suggest=DB::table('key_search')->select(DB::raw('key,count(*) as soluong'))->groupBy('key')->orderBy('soluong','desc')->take(20)->get();
+        $tukhoa_suggest = DB::table('key_search')->distinct()->get();
+
         foreach ($tukhoa_suggest as $sg){
-            $jaccard=$this->jaccard($sg->tukhoa,$string);
-            if(0.55<$jaccard and $jaccard<1){
-                return $sg->tukhoa;
+            $jaccard=$this->jaccard($sg->key,$string);
+            if(0.53<$jaccard and $jaccard < 1){
+                return $sg->key;
             }
         }
         return null;
@@ -177,5 +192,13 @@ class SolrController extends Controller
     public function get_thongke(){
         $key_searchs = KeySearch::all();
         dd($key_searchs);
+        
+    }
+    public function delete_all_db(){
+        $key_searchs = KeySearch::all();
+        foreach ($key_searchs as $key) {
+            $key->delete();
+        }
+        return "Deleted all data base... ahihi";
     }
 }

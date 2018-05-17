@@ -2,7 +2,12 @@
 @section('content')
 <div class="container">
     <hr>
-    <i>Khoảng: &nbsp; <u>{{ $numResult }}</u> &nbsp;kết quả (khoảng:&nbsp;<u>{{ $timeSearch }}</u>&nbsp;giây)</i><br><br>
+    <i>Khoảng: &nbsp; <u>{{ $numResult }}</u> &nbsp;kết quả (khoảng:&nbsp;<u>{{ $timeSearch }}</u>&nbsp;giây)</i><br>
+    @if ($spell != null)
+        <i style="font-size: 15px;">Mọi người cũng hay tìm kiếm:&nbsp;</i><u>{{ $spell }}</u>
+    @endif
+    
+    <br>
     <div style="text-align: center;">{!! $docs->links() !!}</div> 
     <br>
     @foreach ($docs as $doc)
@@ -10,8 +15,9 @@
             {{-- <b style="color: red;"> {{ $doc['Title'][0] }} </b><br><br> --}}
             <b {{-- style="color: red;" --}}>
              @php
+
                  $title  = $doc['Title'][0];
-                 $result = "";
+                 $result = str_replace("".$key."",'<b style="color:blue;">'."".$key."".'</b>',$title);
                  
                  // dd(mb_convert_case ($key, MB_CASE_TITLE, 'UTF-8')); 
                  // dd(mb_strtolower($key, 'UTF-8'));
@@ -28,9 +34,8 @@
                  //    array_push($new_u,ucfirst($ku));
                 
                  foreach ($key_all as $key1) {
-                    $kq  =  str_replace("".$key1."",'<b style="color:blue;">'."".$key1."".'</b>',$title);
+                    $kq  =  str_replace("".$key1."",'<b style="color:blue;">'."".$key1."".'</b>',$result);
                     $result = $kq;
-                    $title =  $kq;
                  } 
                 echo $result ;
              @endphp
@@ -42,7 +47,7 @@
             <p>
                 @php
                     $results = $doc['Content'][0];
-                    $results_kq = "";
+                    $results_kq = str_replace("".$key."",'<b style="color:blue;">'."".$key."".'</b>',$results);
                    
                     $key_l  = mb_strtolower($key, 'UTF-8');
                     $key_u  = mb_convert_case ($key, MB_CASE_TITLE, 'UTF-8');
@@ -51,9 +56,8 @@
                     $key_all = array_merge($key_l_o, $key_u_o);
 
                     foreach($key_all as $key1){
-                        $content = str_replace("".$key1."",'<b style="color:blue;">'."".$key1."".'</b>',$results);
+                        $content = str_replace("".$key1."",'<b style="color:blue;">'."".$key1."".'</b>',$results_kq);
                         $results_kq = $content;
-                        $results = $content;
                     }
                     echo $results_kq;
                 @endphp

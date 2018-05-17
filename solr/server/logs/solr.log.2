@@ -1,678 +1,172 @@
-2018-05-16 11:34:49.982 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-16 11:34:53.213 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-16 11:34:53.214 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-16 11:34:53.214 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-16 11:34:53.268 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-16T11:34:53.216181Z
-2018-05-16 11:34:53.270 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2018-05-16 11:34:54.005 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-16 11:34:54.051 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
-2018-05-16 11:34:59.498 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-16 11:34:59.499 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [tong_hop, search]
-2018-05-16 11:34:59.505 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-05-16 11:35:00.183 INFO  (main) [   ] o.e.j.s.Server Started @17947ms
-2018-05-16 11:35:00.462 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-16 11:35:00.461 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-16 11:35:02.396 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-16 11:35:02.416 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-16 11:35:03.015 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.IndexSchema [search] Schema name=default-config
-2018-05-16 11:35:03.024 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
-2018-05-16 11:35:04.799 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-16 11:35:04.802 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-16 11:35:04.861 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
-2018-05-16 11:35:04.898 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
-2018-05-16 11:35:05.066 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-16 11:35:05.066 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-16 11:35:05.230 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
-2018-05-16 11:35:05.232 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
-2018-05-16 11:35:05.445 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-16 11:35:05.446 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-16 11:35:06.655 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-16 11:35:06.655 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-16 11:35:06.655 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-16 11:35:06.656 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-16 11:35:07.007 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-16 11:35:07.008 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-16 11:35:07.068 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-16 11:35:07.069 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-16 11:35:07.859 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.SolrIndexSearcher Opening [Searcher@7623b495[search] main]
-2018-05-16 11:35:07.859 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.s.SolrIndexSearcher Opening [Searcher@771831c5[tong_hop] main]
-2018-05-16 11:35:07.885 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
-2018-05-16 11:35:07.885 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
-2018-05-16 11:35:07.941 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-16 11:35:07.941 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-16 11:35:07.959 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-16 11:35:07.959 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-16 11:35:07.989 INFO  (coreLoadExecutor-6-thread-1) [   x:tong_hop] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-16 11:35:07.989 INFO  (coreLoadExecutor-6-thread-2) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-16 11:35:08.144 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7623b495[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-16 11:35:08.145 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-16 11:35:08.146 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-16 11:35:08.144 INFO  (searcherExecutor-8-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@771831c5[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-16 11:35:08.149 INFO  (searcherExecutor-8-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-16 11:35:08.149 INFO  (searcherExecutor-8-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-16 11:35:08.152 INFO  (searcherExecutor-8-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@771831c5[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-16 11:35:08.152 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@7623b495[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-16 11:35:40.831 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&df=Content&rows=5} hits=0 status=0 QTime=15
-2018-05-16 11:35:59.075 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=70
-2018-05-16 11:35:59.162 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=1
-2018-05-16 11:35:59.323 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Co&df=Content&rows=5} hits=14151 status=0 QTime=88
-2018-05-16 11:35:59.447 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Cô&df=Content&rows=5} hits=14151 status=0 QTime=0
-2018-05-16 11:35:59.505 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=4
-2018-05-16 11:35:59.598 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:35:59.721 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:35:59.966 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+a&df=Content&rows=5} hits=12199 status=0 QTime=32
-2018-05-16 11:36:00.051 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=5} hits=13235 status=0 QTime=6
-2018-05-16 11:36:00.373 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=5
-2018-05-16 11:36:00.921 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=18
-2018-05-16 11:36:01.247 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=44
-2018-05-16 11:36:01.338 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=28
-2018-05-16 11:36:40.620 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:36:40.647 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:36:40.672 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:36:40.694 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:36:42.483 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:36:42.511 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:36:42.540 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:36:42.567 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:37:30.399 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:37:30.417 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:37:30.438 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=1
-2018-05-16 11:37:30.455 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:37:33.167 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:37:33.188 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:37:33.212 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:37:33.235 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:37:37.723 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:37:37.744 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:37:37.770 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=1
-2018-05-16 11:37:37.785 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:38:15.800 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13235 status=0 QTime=0
-2018-05-16 11:38:15.819 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=1
-2018-05-16 11:38:15.836 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:38:15.852 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:40:50.838 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526470850558} status=0 QTime=1
-2018-05-16 11:40:50.960 INFO  (qtp580871917-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526470850558} status=0 QTime=111
-2018-05-16 11:40:50.975 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526470850558} status=0 QTime=11
-2018-05-16 11:40:55.205 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526470850558} status=0 QTime=0
-2018-05-16 11:40:55.220 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/replication params={wt=json&command=details&_=1526470855194} status=0 QTime=3
-2018-05-16 11:40:55.222 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526470855194} status=0 QTime=11
-2018-05-16 11:40:55.230 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526470850558} status=0 QTime=23
-2018-05-16 11:40:55.239 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/system params={wt=json&_=1526470855194} status=0 QTime=15
-2018-05-16 11:40:55.251 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526470850558&ts=1526470850558} status=503 QTime=2
-2018-05-16 11:40:58.123 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526470850558} status=0 QTime=0
-2018-05-16 11:40:58.146 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526470850558} status=0 QTime=16
-2018-05-16 11:41:10.124 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=B&df=Content&rows=5} hits=391 status=0 QTime=1
-2018-05-16 11:41:10.174 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=B&df=Content&rows=5} hits=391 status=0 QTime=0
-2018-05-16 11:41:10.311 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ba&df=Content&rows=5} hits=4482 status=0 QTime=1
-2018-05-16 11:41:10.491 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bac&df=Content&rows=5} hits=4273 status=0 QTime=11
-2018-05-16 11:41:10.590 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách&df=Content&rows=5} hits=900 status=0 QTime=1
-2018-05-16 11:41:10.648 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách&df=Content&rows=5} hits=900 status=0 QTime=0
-2018-05-16 11:41:10.810 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách&df=Content&rows=5} hits=900 status=0 QTime=0
-2018-05-16 11:41:11.478 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+K&df=Content&rows=5} hits=1004 status=0 QTime=25
-2018-05-16 11:41:11.493 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+K&df=Content&rows=5} hits=1004 status=0 QTime=0
-2018-05-16 11:41:11.657 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Kh&df=Content&rows=5} hits=996 status=0 QTime=2
-2018-05-16 11:41:11.864 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Kho&df=Content&rows=5} hits=4654 status=0 QTime=2
-2018-05-16 11:41:11.994 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Content&rows=5} hits=3233 status=0 QTime=2
-2018-05-16 11:41:12.735 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Content&rows=100} hits=3233 status=0 QTime=2
-2018-05-16 11:41:12.955 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Title&rows=100} hits=197 status=0 QTime=1
-2018-05-16 11:41:13.167 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Url&rows=100} hits=246 status=0 QTime=16
-2018-05-16 11:41:13.247 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&rows=100} hits=847 status=0 QTime=30
-2018-05-16 11:44:03.308 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&_=1526470858083} hits=7171 status=0 QTime=0
-2018-05-16 11:45:23.299 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&rows=100} hits=847 status=0 QTime=0
-2018-05-16 11:45:23.320 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Title&rows=100} hits=197 status=0 QTime=0
-2018-05-16 11:45:23.339 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&df=Url&rows=100} hits=246 status=0 QTime=0
-2018-05-16 11:45:23.356 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Bách+Khoa&rows=100} hits=847 status=0 QTime=0
-2018-05-16 11:45:32.636 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&df=Content&rows=5} hits=0 status=0 QTime=0
-2018-05-16 11:45:33.558 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=0
-2018-05-16 11:45:33.587 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=0
-2018-05-16 11:45:33.726 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Co&df=Content&rows=5} hits=14151 status=0 QTime=0
-2018-05-16 11:45:33.874 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Cô&df=Content&rows=5} hits=14151 status=0 QTime=0
-2018-05-16 11:45:33.979 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Côn&df=Content&rows=5} hits=9132 status=0 QTime=1
-2018-05-16 11:45:34.085 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:45:34.214 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:45:34.516 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+n&df=Content&rows=5} hits=11946 status=0 QTime=18
-2018-05-16 11:45:35.034 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:45:35.242 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+a&df=Content&rows=5} hits=12199 status=0 QTime=0
-2018-05-16 11:45:35.441 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=5} hits=13235 status=0 QTime=0
-2018-05-16 11:45:35.681 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:45:35.696 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:45:35.713 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:45:35.729 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:45:35.812 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=5} hits=13235 status=0 QTime=1
-2018-05-16 11:45:48.308 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:45:48.321 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:45:48.338 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:45:48.356 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:45:52.942 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:45:52.963 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:45:52.980 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:45:52.994 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:46:44.332 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Công+an&_=1526470858083} hits=7171 status=0 QTime=0
-2018-05-16 11:47:00.447 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=bách+khoa&_=1526470858083} hits=847 status=0 QTime=0
-2018-05-16 11:57:34.116 INFO  (qtp580871917-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={q=công+an&df=Content&rows=100} hits=1835 status=0 QTime=2
-2018-05-16 11:57:34.315 INFO  (qtp580871917-18) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={q=công+an&df=Title&rows=100} hits=321 status=0 QTime=7
-2018-05-16 11:57:34.422 INFO  (qtp580871917-20) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={q=công+an&df=Url&rows=100} hits=324 status=0 QTime=14
-2018-05-16 11:57:34.447 INFO  (qtp580871917-13) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/select params={q=công+an&rows=100} hits=0 status=0 QTime=1
-2018-05-16 11:58:00.310 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=c&df=Content&rows=5} hits=386 status=0 QTime=0
-2018-05-16 11:58:00.452 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=co&df=Content&rows=5} hits=14151 status=0 QTime=0
-2018-05-16 11:58:00.601 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=cô&df=Content&rows=5} hits=14151 status=0 QTime=1
-2018-05-16 11:58:00.822 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:58:00.879 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công&df=Content&rows=5} hits=11919 status=0 QTime=0
-2018-05-16 11:58:00.968 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+a&df=Content&rows=5} hits=12199 status=0 QTime=1
-2018-05-16 11:58:01.043 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Content&rows=5} hits=13235 status=0 QTime=0
-2018-05-16 11:58:01.094 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Content&rows=5} hits=13235 status=0 QTime=0
-2018-05-16 11:58:01.304 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:01.321 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:58:01.348 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:58:01.373 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:11.267 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:11.282 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:58:11.299 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:58:11.317 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:18.102 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:18.117 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Title&rows=100} hits=2354 status=0 QTime=0
-2018-05-16 11:58:18.133 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Url&rows=100} hits=2423 status=0 QTime=0
-2018-05-16 11:58:18.149 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&rows=100} hits=7171 status=0 QTime=0
-2018-05-16 11:58:23.601 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an&df=Content&rows=5} hits=13235 status=0 QTime=0
-2018-05-16 11:58:23.790 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+b&df=Content&rows=5} hits=13255 status=0 QTime=7
-2018-05-16 11:58:23.917 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bq&df=Content&rows=5} hits=13235 status=0 QTime=3
-2018-05-16 11:58:24.450 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+b&df=Content&rows=5} hits=13255 status=0 QTime=0
-2018-05-16 11:58:24.836 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bă&df=Content&rows=5} hits=13536 status=0 QTime=3
-2018-05-16 11:58:24.858 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bă&df=Content&rows=5} hits=13536 status=0 QTime=0
-2018-05-16 11:58:25.025 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt&df=Content&rows=5} hits=13843 status=0 QTime=2
-2018-05-16 11:58:25.132 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt&df=Content&rows=5} hits=13843 status=0 QTime=0
-2018-05-16 11:58:25.279 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt&df=Content&rows=5} hits=13843 status=0 QTime=1
-2018-05-16 11:58:25.412 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c&df=Content&rows=5} hits=13879 status=0 QTime=2
-2018-05-16 11:58:26.370 ERROR (qtp580871917-22) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:26.370 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]&df=Content&rows=5} status=400 QTime=2
-2018-05-16 11:58:26.638 ERROR (qtp580871917-19) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]ps': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]ps': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:26.638 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]ps&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:26.807 ERROR (qtp580871917-21) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]ps': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]ps': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:26.807 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]ps&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:26.856 ERROR (qtp580871917-13) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:26.856 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:27.148 ERROR (qtp580871917-15) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]p': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]p': Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 15.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:27.148 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]p&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:27.285 ERROR (qtp580871917-22) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt cơ]': Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:27.285 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ]&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:27.460 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cơ&df=Content&rows=5} hits=14619 status=0 QTime=5
-2018-05-16 11:58:27.580 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c&df=Content&rows=5} hits=13879 status=0 QTime=0
-2018-05-16 11:58:28.227 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cư&df=Content&rows=5} hits=14120 status=0 QTime=3
-2018-05-16 11:58:29.342 ERROR (qtp580871917-14) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]ơ': Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]ơ': Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:29.342 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c]ơ&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:29.350 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c&df=Content&rows=5} hits=13879 status=0 QTime=0
-2018-05-16 11:58:29.350 ERROR (qtp580871917-22) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]': Lexical error at line 1, column 15.  Encountered: <EOF> after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]': Lexical error at line 1, column 15.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 15.  Encountered: <EOF> after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:29.350 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c]&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:29.382 ERROR (qtp580871917-13) [   x:tong_hop] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]ơ': Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'công an bắt c]ơ': Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 14.  Encountered: "]" (93), after : ""
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-16 11:58:29.382 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+c]ơ&df=Content&rows=5} status=400 QTime=1
-2018-05-16 11:58:29.708 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cươ&df=Content&rows=5} hits=13843 status=0 QTime=2
-2018-05-16 11:58:29.779 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cươ&df=Content&rows=5} hits=13843 status=0 QTime=1
-2018-05-16 11:58:30.445 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&df=Content&rows=5} hits=13843 status=0 QTime=3
-2018-05-16 11:58:30.491 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&df=Content&rows=5} hits=13843 status=0 QTime=0
-2018-05-16 11:58:30.795 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&rows=100} hits=8300 status=0 QTime=2
-2018-05-16 11:58:30.854 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&df=Content&rows=5} hits=13843 status=0 QTime=0
-2018-05-16 11:58:30.963 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&df=Title&rows=100} hits=3064 status=0 QTime=2
-2018-05-16 11:58:31.089 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&df=Url&rows=100} hits=3130 status=0 QTime=2
-2018-05-16 11:58:31.132 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&rows=100} hits=8300 status=0 QTime=0
-2018-05-16 11:59:11.111 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526471950873} status=0 QTime=0
-2018-05-16 11:59:11.121 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526471950874} status=0 QTime=8
-2018-05-16 11:59:11.134 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526471950874} status=0 QTime=9
-2018-05-16 11:59:13.463 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526471950873} status=0 QTime=0
-2018-05-16 11:59:13.479 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/replication params={wt=json&command=details&_=1526471953455} status=0 QTime=1
-2018-05-16 11:59:13.479 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526471950874&ts=1526471950874} status=503 QTime=0
-2018-05-16 11:59:13.479 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526471953454} status=0 QTime=0
-2018-05-16 11:59:13.525 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/system params={wt=json&_=1526471953454} status=0 QTime=44
-2018-05-16 11:59:13.526 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526471950874} status=0 QTime=51
-2018-05-16 11:59:15.451 INFO  (qtp580871917-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526471950873} status=0 QTime=0
-2018-05-16 11:59:15.459 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526471950874} status=0 QTime=7
-2018-05-16 11:59:37.374 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=công+an+bắt+cướp&_=1526471955410} hits=8300 status=0 QTime=0
+2018-05-17 12:38:06.494 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-17 12:38:07.575 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-17 12:38:07.576 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-17 12:38:07.576 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-17 12:38:07.739 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-17T12:38:07.578658Z
+2018-05-17 12:38:07.740 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-17 12:38:08.710 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-17 12:38:08.823 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
+2018-05-17 12:38:33.813 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-17 12:38:33.814 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [vi_data, tong_hop, search]
+2018-05-17 12:38:33.819 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-17 12:38:34.737 INFO  (main) [   ] o.e.j.s.Server Started @30502ms
+2018-05-17 12:38:35.151 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-17 12:38:35.151 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-17 12:38:35.294 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-17 12:38:40.320 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-17 12:38:40.352 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-17 12:38:40.363 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-17 12:38:42.197 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
+2018-05-17 12:38:42.208 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
+2018-05-17 12:38:42.303 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema [search] Schema name=default-config
+2018-05-17 12:38:51.079 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-17 12:38:51.107 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
+2018-05-17 12:38:51.487 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-17 12:38:51.509 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
+2018-05-17 12:38:51.541 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-17 12:38:51.574 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
+2018-05-17 12:38:52.249 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-17 12:38:52.249 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-17 12:38:52.254 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-17 12:38:52.513 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
+2018-05-17 12:38:52.513 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
+2018-05-17 12:38:52.513 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
+2018-05-17 12:38:53.115 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-17 12:38:53.115 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-17 12:38:53.115 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-17 12:38:58.699 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-17 12:38:58.702 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-17 12:38:58.701 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-17 12:38:58.699 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-17 12:38:58.703 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-17 12:38:58.706 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-17 12:38:59.736 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-17 12:38:59.736 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-17 12:38:59.746 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-17 12:38:59.746 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-17 12:39:00.668 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-17 12:39:00.669 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-17 12:39:00.984 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.SolrIndexSearcher Opening [Searcher@4a884d11[search] main]
+2018-05-17 12:39:00.984 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@be95cd7[vi_data] main]
+2018-05-17 12:39:01.084 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.SolrIndexSearcher Opening [Searcher@37aec682[tong_hop] main]
+2018-05-17 12:39:01.087 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
+2018-05-17 12:39:01.087 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
+2018-05-17 12:39:01.088 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
+2018-05-17 12:39:01.588 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-17 12:39:01.588 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-17 12:39:01.588 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-17 12:39:01.619 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-17 12:39:01.622 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-17 12:39:01.662 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-17 12:39:01.680 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-17 12:39:01.684 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-17 12:39:01.684 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-17 12:39:02.725 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@be95cd7[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-17 12:39:02.725 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-17 12:39:02.726 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-17 12:39:02.728 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@37aec682[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-17 12:39:02.731 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-17 12:39:02.731 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-17 12:39:02.727 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4a884d11[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-17 12:39:02.731 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-17 12:39:02.731 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-17 12:39:02.732 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@be95cd7[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-17 12:39:02.733 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@37aec682[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-17 12:39:02.733 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@4a884d11[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-17 12:41:02.553 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=a&df=Content&rows=5} hits=855 status=0 QTime=87
+2018-05-17 12:41:02.553 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ă&df=Content&rows=5} hits=855 status=0 QTime=67
+2018-05-17 12:41:02.601 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn&df=Content&rows=5} hits=0 status=0 QTime=1
+2018-05-17 12:41:02.937 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:41:03.128 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+c&df=Content&rows=5} hits=386 status=0 QTime=29
+2018-05-17 12:41:03.300 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+ca&df=Content&rows=5} hits=2986 status=0 QTime=1
+2018-05-17 12:41:03.520 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:41:03.618 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:41:03.767 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+t&df=Content&rows=5} hits=276 status=0 QTime=17
+2018-05-17 12:41:03.826 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+th&df=Content&rows=5} hits=39 status=0 QTime=1
+2018-05-17 12:41:04.077 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+the&df=Content&rows=5} hits=10061 status=0 QTime=28
+2018-05-17 12:41:04.225 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thê&df=Content&rows=5} hits=10061 status=0 QTime=39
+2018-05-17 12:41:04.387 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:41:04.453 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:41:04.677 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+g&df=Content&rows=5} hits=79 status=0 QTime=21
+2018-05-17 12:41:04.954 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+gi&df=Content&rows=5} hits=29 status=0 QTime=1
+2018-05-17 12:41:05.160 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giơ&df=Content&rows=5} hits=558 status=0 QTime=1
+2018-05-17 12:41:05.218 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giơ&df=Content&rows=5} hits=558 status=0 QTime=0
+2018-05-17 12:41:05.336 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=5} hits=5569 status=0 QTime=2
+2018-05-17 12:41:05.394 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=5} hits=5569 status=0 QTime=0
+2018-05-17 12:41:05.635 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=5} hits=5569 status=0 QTime=0
+2018-05-17 12:41:06.654 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=4
+2018-05-17 12:41:07.256 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=15
+2018-05-17 12:41:07.594 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=13
+2018-05-17 12:42:14.912 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:14.935 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=0
+2018-05-17 12:42:14.959 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=0
+2018-05-17 12:42:29.571 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:29.592 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=0
+2018-05-17 12:42:29.617 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=1
+2018-05-17 12:42:35.265 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:35.286 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=0
+2018-05-17 12:42:35.303 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=0
+2018-05-17 12:42:43.488 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:43.512 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=1
+2018-05-17 12:42:43.528 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=0
+2018-05-17 12:42:44.817 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:44.845 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=0
+2018-05-17 12:42:44.871 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=1
+2018-05-17 12:42:51.816 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Content&rows=100} hits=5569 status=0 QTime=0
+2018-05-17 12:42:51.839 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=377 status=0 QTime=0
+2018-05-17 12:42:51.860 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=6262 status=0 QTime=0
+2018-05-17 12:43:36.079 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=0
+2018-05-17 12:43:36.097 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=C&df=Content&rows=5} hits=386 status=0 QTime=0
+2018-05-17 12:43:36.237 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Co&df=Content&rows=5} hits=4866 status=0 QTime=16
+2018-05-17 12:43:36.352 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Cô&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-17 12:43:36.615 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Côn&df=Content&rows=5} hits=174 status=0 QTime=1
+2018-05-17 12:43:36.794 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=4
+2018-05-17 12:43:37.063 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
+2018-05-17 12:43:37.462 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công&df=Content&rows=5} hits=11919 status=0 QTime=0
+2018-05-17 12:43:37.762 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công+a&df=Content&rows=5} hits=12035 status=0 QTime=37
+2018-05-17 12:43:37.877 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=5} hits=13032 status=0 QTime=6
+2018-05-17 12:43:38.978 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công+an&df=Content&rows=100} hits=13032 status=0 QTime=7
+2018-05-17 12:43:39.186 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công+an&df=Title&rows=100} hits=2220 status=0 QTime=13
+2018-05-17 12:43:39.401 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Công+an&df=Url&rows=100} hits=2423 status=0 QTime=17
+2018-05-17 12:49:49.277 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=A&rows=5} hits=524 status=0 QTime=22
+2018-05-17 12:49:49.750 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ă&rows=5} hits=524 status=0 QTime=1
+2018-05-17 12:49:50.800 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn&rows=5} hits=3668 status=0 QTime=1
+2018-05-17 12:49:51.392 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn&rows=5} hits=3668 status=0 QTime=0
+2018-05-17 12:49:51.415 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn&rows=5} hits=3668 status=0 QTime=0
+2018-05-17 12:49:52.052 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+c&rows=5} hits=4021 status=0 QTime=15
+2018-05-17 12:49:52.403 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+ca&rows=5} hits=4850 status=0 QTime=2
+2018-05-17 12:49:52.747 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả&rows=5} hits=4850 status=0 QTime=1
+2018-05-17 12:49:53.462 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả&rows=5} hits=4850 status=0 QTime=1
+2018-05-17 12:49:53.487 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả&rows=5} hits=4850 status=0 QTime=0
+2018-05-17 12:49:53.821 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+t&rows=5} hits=5266 status=0 QTime=24
+2018-05-17 12:49:54.062 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+th&rows=5} hits=4980 status=0 QTime=2
+2018-05-17 12:49:54.599 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+the&rows=5} hits=10614 status=0 QTime=2
+2018-05-17 12:49:54.703 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thê&rows=5} hits=10614 status=0 QTime=1
+2018-05-17 12:49:54.913 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế&rows=5} hits=10614 status=0 QTime=0
+2018-05-17 12:49:55.638 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế&rows=5} hits=10614 status=0 QTime=0
+2018-05-17 12:49:55.658 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế&rows=5} hits=10614 status=0 QTime=0
+2018-05-17 12:49:56.779 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+g&rows=5} hits=10644 status=0 QTime=15
+2018-05-17 12:49:57.180 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+gi&rows=5} hits=10720 status=0 QTime=3
+2018-05-17 12:49:57.521 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+gio&rows=5} hits=10796 status=0 QTime=2
+2018-05-17 12:49:57.888 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+gioi&rows=5} hits=10829 status=0 QTime=3
+2018-05-17 12:49:58.326 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+giơi&rows=5} hits=10829 status=0 QTime=1
+2018-05-17 12:49:58.553 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+giới&rows=5} hits=10829 status=0 QTime=1
+2018-05-17 12:49:59.497 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+giới&rows=5} hits=10829 status=0 QTime=0
+2018-05-17 12:49:59.544 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+giới&rows=5} hits=10829 status=0 QTime=1
+2018-05-17 12:49:59.618 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ăn+cả+thế+giới&rows=5} hits=10829 status=0 QTime=0
+2018-05-17 12:49:59.624 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&rows=100} hits=10829 status=0 QTime=2
+2018-05-17 12:50:00.059 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=2450 status=0 QTime=28
+2018-05-17 12:50:00.466 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=7686 status=0 QTime=40
+2018-05-17 12:50:19.258 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&rows=100} hits=10829 status=0 QTime=0
+2018-05-17 12:50:19.272 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Title&rows=100} hits=2450 status=0 QTime=0
+2018-05-17 12:50:19.287 INFO  (qtp580871917-15) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ăn+cả+thế+giới&df=Url&rows=100} hits=7686 status=0 QTime=0
+2018-05-17 12:55:30.808 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
+2018-05-17 12:55:30.808 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-05-17 12:55:30.808 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-05-17 12:55:30.808 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-05-17 12:55:30.809 INFO  (coreCloseExecutor-22-thread-1) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@77ce71bf
+2018-05-17 12:55:30.810 INFO  (coreCloseExecutor-22-thread-1) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=2010018239
+2018-05-17 12:55:30.813 INFO  (coreCloseExecutor-22-thread-2) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@3b4a06cb
+2018-05-17 12:55:30.813 INFO  (coreCloseExecutor-22-thread-3) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@6f1202d2
+2018-05-17 12:55:30.814 INFO  (coreCloseExecutor-22-thread-3) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=1863451346
+2018-05-17 12:55:30.814 INFO  (coreCloseExecutor-22-thread-2) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=994707147

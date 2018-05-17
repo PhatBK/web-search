@@ -9,11 +9,16 @@
                     <form action="solr/api/get/tong_hop" method="GET" accept-charset="utf-8" autocomplete="off">
                         <input type="hidden" name="_token" value="{{csrf_token()}}" />
                         <div class="input-group stylish-input-group input-append">
-                            <input type="text" class="form-control"  placeholder="Tìm Cả Thế Giới !!" name="search" id="key_search" required=""
+                            <input type="text" class="form-control" list="suggestions"  placeholder="Tìm Cả Thế Giới !!" name="search" id="key_search" required=""
                             @isset ($key)
                                 value="{{ $key }}" 
                             @endisset
                             >
+                            <datalist id="suggestions">
+                               {{--  @foreach ($suggestions as $sugg)
+                                    <option value="{{ $sugg }}"></option>
+                                @endforeach   --}}                            
+                            </datalist>
                             <span class="input-group-addon">
                                 <button type="submit">
                                     <span class="glyphicon glyphicon-search"></span>
