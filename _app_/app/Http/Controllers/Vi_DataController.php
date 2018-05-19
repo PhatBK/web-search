@@ -29,10 +29,15 @@ class Vi_DataController extends Controller
     public function get_solr_vi_data_api(Request $request){
 
         $key = $request->search;
-        // dd(split_key_search($key));
-        // $spell=$this->spell_check($request->search);
-        // dd(KeySearch::all());
-        // dd($spell);
+        $key_n = preg_replace('/[\:]/',"",$key);
+        
+        $key_s = $key_n;
+        $spell = $this->spell_check($key);
+        if($spell != null){
+            $key_s = $spell;
+        }else{
+            $key_s = $key;
+        }
 
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/vi_data/']);
         /* 
@@ -42,10 +47,10 @@ class Vi_DataController extends Controller
          * Ahihi
         */
         // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=100');
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=100');
 
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key.'&rows=100');
+        $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
+        $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content = $response_content->getBody();
@@ -71,17 +76,19 @@ class Vi_DataController extends Controller
         $numResult      = $numFound ;
         $timeSearch     = $QTime;
         $flag = true;
-        if($request->search != "" && $request->search != " "){
-            $thongke = new KeySearch;
-            $thongke->key = $request->search;
-            $thongke->save();
-        }
         // Phần phân trang kết quả tìm kiếm
         $page = Input::get('page',1);
         $perpage = 10;
         $offset = ($page*$perpage) - $perpage;
         $json_doc = new LengthAwarePaginator(array_slice($docs,$offset,$perpage,true),count($docs),$perpage,$page,['path'=>$request->url(),'query'=> $request->query()]);
-
+        if($page == 1){
+            if($request->search != "" && $request->search != " "){
+                $thongke = new KeySearch;
+                $thongke->key = $request->search;
+                $thongke->save();
+            }
+        }
+        
         // Phần trả lại kết quả cho giao diện
         return view('vi_data.result',
                     [
@@ -92,6 +99,7 @@ class Vi_DataController extends Controller
                     'timeSearch' => $timeSearch,
                     'key' => $key,
                     'results '=> $results ,
+                    'spell' => $spell,
                     ]
         );
     }
@@ -166,18 +174,19 @@ class Vi_DataController extends Controller
     }
     public function spell_check($string){
 
-        $tukhoa_suggest=DB::table('key_search')->select(DB::raw('key,count(*) as soluong'))->groupBy('key')->orderBy('soluong','desc')->take(20)->get();
+        // $tukhoa_suggest=DB::table('key_search')
+        //                                         ->select(DB::raw('key,count(*) as soluong'))
+        //                                         ->groupBy('key')
+        //                                         ->orderBy('soluong','desc')
+        //                                         ->take(20)
+        //                                         ->get();
+        $tukhoa_suggest = DB::table('key_search')->distinct()->get();
         foreach ($tukhoa_suggest as $sg){
-            $jaccard=$this->jaccard($sg->tukhoa,$string);
+            $jaccard=$this->jaccard($sg->key,$string);
             if(0.55<$jaccard and $jaccard<1){
-                return $sg->tukhoa;
+                return $sg->key;
             }
         }
         return null;
-    }
-
-    public function get_thongke(){
-        $key_searchs = KeySearch::all();
-        dd($key_searchs);
     }
 }

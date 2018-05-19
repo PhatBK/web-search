@@ -47,7 +47,7 @@ class SolrController extends Controller
          * Ahihi
         */
         // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?q='.$key_s.'&rows=100');
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=100');
 
         $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
         $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');

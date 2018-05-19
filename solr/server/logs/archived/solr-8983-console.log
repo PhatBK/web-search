@@ -1,8 +1,8 @@
 Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
 Java HotSpot(TM) 64-Bit Server VM warning: Option UseParNewGC was deprecated in version 9.0 and will likely be removed in a future release.
-2018-05-17 13:28:32.837 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-17 13:28:33.248 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-17 13:28:33.248 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-17 13:28:33.249 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-17 13:28:33.261 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-17T13:28:33.250207Z
-2018-05-17 13:28:33.262 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-19 08:05:06.143 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-19 08:05:06.926 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-19 08:05:06.926 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-19 08:05:06.927 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-19 08:05:06.946 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-19T08:05:06.928516Z
+2018-05-19 08:05:06.947 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE

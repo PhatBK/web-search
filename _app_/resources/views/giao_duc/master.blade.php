@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Solr Search Client</title>
+    <title>Giao_Duc Index Map Client</title>
     <base href="{{ asset('') }}" target="_blank, _self, _parent, _top">
     <link rel="stylesheet" href="">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
