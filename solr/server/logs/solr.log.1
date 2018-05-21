@@ -1,749 +1,178 @@
-2018-05-19 13:12:08.588 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-19 13:12:09.426 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-19 13:12:09.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-19 13:12:09.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-19 13:12:09.439 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-19T13:12:09.428882Z
-2018-05-19 13:12:09.440 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2018-05-19 13:12:09.627 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-19 13:12:09.676 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
-2018-05-19 13:12:12.184 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 5 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-19 13:12:12.185 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [vi_data_test, vi_data, base_index, tong_hop, search]
-2018-05-19 13:12:12.189 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-05-19 13:12:12.638 INFO  (main) [   ] o.e.j.s.Server Started @6242ms
-2018-05-19 13:12:12.673 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrResourceLoader [vi_data_test] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-19 13:12:12.673 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-19 13:12:12.674 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrResourceLoader [base_index] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-19 13:12:13.921 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-19 13:12:13.926 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-19 13:12:13.934 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-19 13:12:14.317 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
-2018-05-19 13:12:14.327 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.IndexSchema [base_index] Schema name=default-config
-2018-05-19 13:12:14.328 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.IndexSchema [vi_data_test] Schema name=default-config
-2018-05-19 13:12:16.054 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-19 13:12:16.092 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.CoreContainer Creating SolrCore 'vi_data_test' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test, trusted=true
-2018-05-19 13:12:16.146 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-19 13:12:16.174 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
-2018-05-19 13:12:16.315 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-19 13:12:16.338 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.CoreContainer Creating SolrCore 'base_index' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index, trusted=true
-2018-05-19 13:12:16.363 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-19 13:12:16.363 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-19 13:12:16.363 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-19 13:12:16.398 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
-2018-05-19 13:12:16.398 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrCore [[base_index] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/data/]
-2018-05-19 13:12:16.398 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore [[vi_data_test] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test/data/]
-2018-05-19 13:12:16.537 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-19 13:12:16.537 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-19 13:12:16.538 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-19 13:12:17.146 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-19 13:12:17.146 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-19 13:12:17.147 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-19 13:12:17.147 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-19 13:12:17.146 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-19 13:12:17.151 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-19 13:12:17.193 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-19 13:12:17.193 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-19 13:12:17.758 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-19 13:12:17.758 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-19 13:12:17.817 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.SolrIndexSearcher Opening [Searcher@4f476b78[vi_data_test] main]
-2018-05-19 13:12:17.869 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test/conf
-2018-05-19 13:12:17.891 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-19 13:12:17.891 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-19 13:12:18.152 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-19 13:12:18.194 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-19 13:12:18.222 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-19 13:12:18.551 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4f476b78[vi_data_test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-05-19 13:12:18.551 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-19 13:12:18.551 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-19 13:12:18.556 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.SolrCore [vi_data_test] Registered new searcher Searcher@4f476b78[vi_data_test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-05-19 13:12:18.572 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@3e555c5c[vi_data] main]
-2018-05-19 13:12:18.572 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.SolrIndexSearcher Opening [Searcher@7c2b728e[base_index] main]
-2018-05-19 13:12:18.573 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
-2018-05-19 13:12:18.575 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/conf
-2018-05-19 13:12:18.576 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-19 13:12:18.576 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-19 13:12:18.576 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-19 13:12:18.576 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1600898244097867776
-2018-05-19 13:12:18.576 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-19 13:12:18.579 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-19 13:12:18.579 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3e555c5c[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-19 13:12:18.579 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-19 13:12:18.579 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-19 13:12:18.580 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@3e555c5c[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-19 13:12:18.580 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-19 13:12:18.581 INFO  (searcherExecutor-9-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7c2b728e[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-19 13:12:18.581 INFO  (searcherExecutor-9-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-19 13:12:18.581 INFO  (searcherExecutor-9-thread-1-processing-x:base_index) [   x:base_index] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-19 13:12:18.581 INFO  (searcherExecutor-9-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.SolrCore [base_index] Registered new searcher Searcher@7c2b728e[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-19 13:12:18.684 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-19 13:12:18.696 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-19 13:12:18.730 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-19 13:12:18.735 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-19 13:12:18.855 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
-2018-05-19 13:12:18.888 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
-2018-05-19 13:12:19.246 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-19 13:12:19.270 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
-2018-05-19 13:12:19.270 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-19 13:12:19.270 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
-2018-05-19 13:12:19.276 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-19 13:12:19.301 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-19 13:12:19.319 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-19 13:12:19.319 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-19 13:12:19.322 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
-2018-05-19 13:12:19.323 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-19 13:12:19.323 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
-2018-05-19 13:12:19.333 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-19 13:12:19.373 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-19 13:12:19.373 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-19 13:12:19.445 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-19 13:12:19.445 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-19 13:12:19.531 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-19 13:12:19.531 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-19 13:12:19.867 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@42eaeb17[search] main]
-2018-05-19 13:12:19.868 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
-2018-05-19 13:12:19.868 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-19 13:12:19.868 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-19 13:12:19.869 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-19 13:12:19.879 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@42eaeb17[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-19 13:12:19.880 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-19 13:12:19.880 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-19 13:12:19.880 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@42eaeb17[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-19 13:12:19.927 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@52b196a1[tong_hop] main]
-2018-05-19 13:12:19.928 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
-2018-05-19 13:12:19.928 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-19 13:12:19.929 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-19 13:12:19.929 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-19 13:12:19.930 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@52b196a1[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-19 13:12:19.930 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-19 13:12:19.930 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-19 13:12:19.930 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@52b196a1[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-19 13:12:49.605 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=5
-2018-05-19 13:12:49.725 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=125
-2018-05-19 13:12:49.753 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=5
-2018-05-19 13:14:42.792 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:14:42.807 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=15
-2018-05-19 13:14:42.807 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526735684004} status=0 QTime=15
-2018-05-19 13:14:42.810 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/replication params={wt=json&command=details&_=1526735684004} status=0 QTime=13
-2018-05-19 13:14:42.817 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526735570519&ts=1526735570519} status=503 QTime=1
-2018-05-19 13:14:42.820 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/system params={wt=json&_=1526735684004} status=0 QTime=22
-2018-05-19 13:17:30.356 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:17:30.365 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=9
-2018-05-19 13:17:30.379 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=6
-2018-05-19 13:20:20.718 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:20:20.730 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/replication params={wt=json&command=details&_=1526735684004} status=0 QTime=0
-2018-05-19 13:20:20.732 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526735570519&ts=1526735570519} status=503 QTime=0
-2018-05-19 13:20:20.736 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526735684004} status=0 QTime=0
-2018-05-19 13:20:20.739 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=21
-2018-05-19 13:20:20.744 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/system params={wt=json&_=1526735684004} status=0 QTime=15
-2018-05-19 13:20:22.734 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:20:22.746 INFO  (qtp580871917-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=12
-2018-05-19 13:20:38.177 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=King+tế+thế+giới&_=1526736023954} hits=8938 status=0 QTime=121
-2018-05-19 13:20:57.241 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=King+tế+thế+giới&df=Content&_=1526736023954} hits=12448 status=0 QTime=58
-2018-05-19 13:21:14.024 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Kinh+tế+thế+giới&df=Content&_=1526736023954} hits=12732 status=0 QTime=8
-2018-05-19 13:23:03.973 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:23:03.983 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526735684004} status=0 QTime=1
-2018-05-19 13:23:03.984 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526735570519&ts=1526735570519} status=503 QTime=0
-2018-05-19 13:23:03.987 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/replication params={wt=json&command=details&_=1526735684004} status=0 QTime=2
-2018-05-19 13:23:03.991 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=9
-2018-05-19 13:23:03.994 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/system params={wt=json&_=1526735684004} status=0 QTime=7
-2018-05-19 13:23:07.196 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:23:07.210 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526735684004} status=0 QTime=10
-2018-05-19 13:23:07.219 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=22
-2018-05-19 13:23:31.493 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:23:31.499 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526735684004} status=0 QTime=3
-2018-05-19 13:23:31.500 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2018-05-19 13:23:31.514 INFO  (qtp580871917-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=20
-2018-05-19 13:23:31.546 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Kinh+tế+thế+giới+có+nhiều+biến+động&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=kinh+tế&wt=json&_=1526736188431} status=0 QTime=46
-2018-05-19 13:26:50.297 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:26:50.302 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/replication params={wt=json&command=details&_=1526735684004} status=0 QTime=2
-2018-05-19 13:26:50.303 INFO  (qtp580871917-14) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526735684004} status=0 QTime=2
-2018-05-19 13:26:50.304 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526735570519&ts=1526735570519} status=503 QTime=0
-2018-05-19 13:26:50.306 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=9
-2018-05-19 13:26:50.312 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/system params={wt=json&_=1526735684004} status=0 QTime=14
-2018-05-19 13:26:52.283 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:26:52.286 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526735684004} status=0 QTime=2
-2018-05-19 13:26:52.291 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=8
-2018-05-19 13:27:14.412 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526735570518} status=0 QTime=0
-2018-05-19 13:27:14.420 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526735684004} status=0 QTime=3
-2018-05-19 13:27:14.421 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2018-05-19 13:27:14.426 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526735570519} status=0 QTime=13
-2018-05-19 13:27:14.427 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Kinh+tế+thế+giới+có+nhiều+biến+động&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=kinh+tế&wt=json&_=1526736188431} status=0 QTime=5
-2018-05-19 13:29:30.003 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Content&rows=100} hits=14183 status=0 QTime=80
-2018-05-19 13:29:31.197 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Title&rows=100} hits=2275 status=0 QTime=27
-2018-05-19 13:29:31.732 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Url&rows=100} hits=0 status=0 QTime=13
-2018-05-19 13:30:03.517 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Content&rows=100} hits=14206 status=0 QTime=59
-2018-05-19 13:30:03.872 INFO  (qtp580871917-21) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Title&rows=100} hits=1661 status=0 QTime=3
-2018-05-19 13:30:04.187 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Url&rows=100} hits=0 status=0 QTime=2
-2018-05-19 13:30:17.440 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Content&rows=100} hits=0 status=0 QTime=1
-2018-05-19 13:30:17.443 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Title&rows=100} hits=0 status=0 QTime=1
-2018-05-19 13:30:17.446 INFO  (qtp580871917-14) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=cô+ấy+có+còn+nghĩ+tới+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:30:35.384 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=9996 status=0 QTime=116
-2018-05-19 13:30:35.874 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=685 status=0 QTime=31
-2018-05-19 13:30:36.293 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=883 status=0 QTime=10
-2018-05-19 13:32:53.999 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Content&rows=100} hits=14183 status=0 QTime=0
-2018-05-19 13:32:54.022 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Title&rows=100} hits=2275 status=0 QTime=0
-2018-05-19 13:32:54.046 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Bạn+thân+của+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:33:41.997 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=26
-2018-05-19 13:33:42.127 INFO  (qtp580871917-18) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=3
-2018-05-19 13:33:42.393 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=1
-2018-05-19 13:34:19.741 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=0
-2018-05-19 13:34:19.766 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=0
-2018-05-19 13:34:19.795 INFO  (qtp580871917-21) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:34:25.229 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=1
-2018-05-19 13:34:25.249 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=0
-2018-05-19 13:34:25.269 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:34:32.747 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=0
-2018-05-19 13:34:32.768 INFO  (qtp580871917-18) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=1
-2018-05-19 13:34:32.788 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:34:39.193 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=0
-2018-05-19 13:34:39.214 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=0
-2018-05-19 13:34:39.232 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=1
-2018-05-19 13:34:48.323 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Content&rows=100} hits=14350 status=0 QTime=0
-2018-05-19 13:34:48.344 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Title&rows=100} hits=2451 status=0 QTime=0
-2018-05-19 13:34:48.364 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Cô+ấy+không+còn+tình+cảm+với+tôi&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 13:35:07.106 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Content&rows=100} hits=14491 status=0 QTime=43
-2018-05-19 13:35:07.147 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Title&rows=100} hits=1715 status=0 QTime=3
-2018-05-19 13:35:07.269 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Url&rows=100} hits=1119 status=0 QTime=2
-2018-05-19 13:35:16.166 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Content&rows=100} hits=14491 status=0 QTime=0
-2018-05-19 13:35:16.188 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Title&rows=100} hits=1715 status=0 QTime=0
-2018-05-19 13:35:16.205 INFO  (qtp580871917-18) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tình+cảm+tôi+dành+cho+cô+ấy+đã+hết&df=Url&rows=100} hits=1119 status=0 QTime=0
-2018-05-19 13:35:53.732 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=hoa+hong&df=Content&rows=100} hits=1522 status=0 QTime=18
-2018-05-19 13:35:53.866 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=hoa+hong&df=Title&rows=100} hits=142 status=0 QTime=1
-2018-05-19 13:35:53.943 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=hoa+hong&df=Url&rows=100} hits=750 status=0 QTime=10
-2018-05-19 13:56:56.970 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Content&rows=100} hits=14643 status=0 QTime=138
-2018-05-19 13:56:57.096 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Title&rows=100} hits=4542 status=0 QTime=4
-2018-05-19 13:56:57.160 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Url&rows=100} hits=3647 status=0 QTime=7
-2018-05-19 13:57:16.571 INFO  (qtp580871917-21) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Content&rows=100} hits=14643 status=0 QTime=1
-2018-05-19 13:57:16.595 INFO  (qtp580871917-18) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Title&rows=100} hits=4542 status=0 QTime=1
-2018-05-19 13:57:16.617 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Url&rows=100} hits=3647 status=0 QTime=0
-2018-05-19 14:06:46.721 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=D&rows=5} hits=424 status=0 QTime=20
-2018-05-19 14:06:46.781 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&rows=5} hits=0 status=0 QTime=0
-2018-05-19 14:06:46.784 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:06:46.887 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:06:46.902 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:06:47.890 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đa&rows=5} hits=7217 status=0 QTime=1
-2018-05-19 14:06:47.975 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đai&rows=5} hits=2661 status=0 QTime=0
-2018-05-19 14:06:48.122 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đa&rows=5} hits=7217 status=0 QTime=0
-2018-05-19 14:06:48.123 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:06:48.127 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đạ&rows=5} hits=7217 status=0 QTime=0
-2018-05-19 14:06:48.134 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại&rows=5} hits=2661 status=0 QTime=0
-2018-05-19 14:06:48.182 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại&rows=5} hits=2661 status=0 QTime=0
-2018-05-19 14:06:48.629 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại&rows=5} hits=2661 status=0 QTime=0
-2018-05-19 14:06:55.671 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+H&rows=5} hits=2868 status=0 QTime=1
-2018-05-19 14:06:55.718 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+H&rows=5} hits=2868 status=0 QTime=0
-2018-05-19 14:07:13.950 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Ho&rows=5} hits=4238 status=0 QTime=1
-2018-05-19 14:07:14.046 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Hoc&rows=5} hits=5368 status=0 QTime=1
-2018-05-19 14:07:14.113 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Ho&rows=5} hits=4238 status=0 QTime=0
-2018-05-19 14:07:14.123 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+H&rows=5} hits=2868 status=0 QTime=0
-2018-05-19 14:07:14.127 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Họ&rows=5} hits=4238 status=0 QTime=0
-2018-05-19 14:07:14.132 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:14.168 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:14.435 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học&rows=5} hits=5368 status=0 QTime=1
-2018-05-19 14:07:17.438 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+B&rows=5} hits=5542 status=0 QTime=24
-2018-05-19 14:07:17.489 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+B&rows=5} hits=5542 status=0 QTime=0
-2018-05-19 14:07:17.575 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+Ba&rows=5} hits=7573 status=0 QTime=1
-2018-05-19 14:07:17.753 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+Bac&rows=5} hits=6008 status=0 QTime=1
-2018-05-19 14:07:17.887 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+Bach&rows=5} hits=5450 status=0 QTime=1
-2018-05-19 14:07:18.256 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+Bac&rows=5} hits=6008 status=0 QTime=0
-2018-05-19 14:07:18.417 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+Ba&rows=5} hits=7573 status=0 QTime=0
-2018-05-19 14:07:18.559 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học+B&rows=5} hits=5542 status=0 QTime=0
-2018-05-19 14:07:18.716 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:19.964 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:20.130 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+Họ&rows=5} hits=4238 status=0 QTime=0
-2018-05-19 14:07:20.275 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+H&rows=5} hits=2868 status=0 QTime=0
-2018-05-19 14:07:20.425 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại&rows=5} hits=2661 status=0 QTime=0
-2018-05-19 14:07:21.497 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+h&rows=5} hits=2868 status=0 QTime=0
-2018-05-19 14:07:21.700 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+ho&rows=5} hits=4238 status=0 QTime=0
-2018-05-19 14:07:21.870 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+hoc&rows=5} hits=5368 status=0 QTime=1
-2018-05-19 14:07:21.943 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+ho&rows=5} hits=4238 status=0 QTime=1
-2018-05-19 14:07:21.949 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+h&rows=5} hits=2868 status=0 QTime=0
-2018-05-19 14:07:21.954 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+họ&rows=5} hits=4238 status=0 QTime=0
-2018-05-19 14:07:21.959 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:22.001 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học&rows=5} hits=5368 status=0 QTime=0
-2018-05-19 14:07:22.148 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học&rows=5} hits=5368 status=0 QTime=1
-2018-05-19 14:07:22.338 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+b&rows=5} hits=5542 status=0 QTime=0
-2018-05-19 14:07:22.470 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+ba&rows=5} hits=7573 status=0 QTime=0
-2018-05-19 14:07:22.654 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+ba&rows=5} hits=7573 status=0 QTime=0
-2018-05-19 14:07:22.657 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+b&rows=5} hits=5542 status=0 QTime=0
-2018-05-19 14:07:22.660 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bá&rows=5} hits=7573 status=0 QTime=0
-2018-05-19 14:07:22.668 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bác&rows=5} hits=6008 status=0 QTime=0
-2018-05-19 14:07:22.686 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bác&rows=5} hits=6008 status=0 QTime=0
-2018-05-19 14:07:22.747 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách&rows=5} hits=5450 status=0 QTime=0
-2018-05-19 14:07:22.773 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách&rows=5} hits=5450 status=0 QTime=0
-2018-05-19 14:07:22.980 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách&rows=5} hits=5450 status=0 QTime=0
-2018-05-19 14:07:23.424 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+k&rows=5} hits=5562 status=0 QTime=1
-2018-05-19 14:07:23.608 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+kh&rows=5} hits=5526 status=0 QTime=2
-2018-05-19 14:07:23.805 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+kho&rows=5} hits=5799 status=0 QTime=1
-2018-05-19 14:07:23.904 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa&rows=5} hits=5590 status=0 QTime=3
-2018-05-19 14:07:24.080 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa&rows=5} hits=5590 status=0 QTime=0
-2018-05-19 14:07:24.843 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa&rows=5} hits=5590 status=0 QTime=0
-2018-05-19 14:07:26.547 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+c&rows=5} hits=5844 status=0 QTime=1
-2018-05-19 14:07:26.653 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+co&rows=5} hits=10028 status=0 QTime=2
-2018-05-19 14:07:26.687 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+c&rows=5} hits=5844 status=0 QTime=0
-2018-05-19 14:07:26.692 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có&rows=5} hits=10028 status=0 QTime=0
-2018-05-19 14:07:26.755 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có&rows=5} hits=10028 status=0 QTime=0
-2018-05-19 14:07:26.867 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có&rows=5} hits=10028 status=0 QTime=0
-2018-05-19 14:07:27.076 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+g&rows=5} hits=10071 status=0 QTime=1
-2018-05-19 14:07:27.180 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gi&rows=5} hits=10149 status=0 QTime=2
-2018-05-19 14:07:27.214 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+g&rows=5} hits=10071 status=0 QTime=0
-2018-05-19 14:07:27.220 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì&rows=5} hits=10149 status=0 QTime=0
-2018-05-19 14:07:27.314 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì&rows=5} hits=10149 status=0 QTime=0
-2018-05-19 14:07:27.423 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì&rows=5} hits=10149 status=0 QTime=0
-2018-05-19 14:07:27.669 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+k&rows=5} hits=10201 status=0 QTime=1
-2018-05-19 14:07:28.513 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì&rows=5} hits=10149 status=0 QTime=0
-2018-05-19 14:07:29.238 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+h&rows=5} hits=10227 status=0 QTime=1
-2018-05-19 14:07:29.450 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+ho&rows=5} hits=10784 status=0 QTime=2
-2018-05-19 14:07:29.687 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hot&rows=5} hits=10178 status=0 QTime=1
-2018-05-19 14:07:29.800 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+ho&rows=5} hits=10784 status=0 QTime=0
-2018-05-19 14:07:29.804 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+h&rows=5} hits=10227 status=0 QTime=0
-2018-05-19 14:07:29.810 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hó&rows=5} hits=10784 status=0 QTime=0
-2018-05-19 14:07:29.816 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&rows=5} hits=10178 status=0 QTime=0
-2018-05-19 14:07:29.847 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&rows=5} hits=10178 status=0 QTime=0
-2018-05-19 14:07:30.090 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&rows=100} hits=10178 status=0 QTime=1
-2018-05-19 14:07:30.140 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&rows=5} hits=10178 status=0 QTime=0
-2018-05-19 14:07:30.453 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&df=Title&rows=100} hits=3508 status=0 QTime=12
-2018-05-19 14:07:30.660 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đại+học+bách+khoa+có+gì+hót&df=Url&rows=100} hits=4862 status=0 QTime=22
-2018-05-19 14:07:42.190 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&rows=5} hits=0 status=0 QTime=0
-2018-05-19 14:07:44.784 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=k&rows=5} hits=173 status=0 QTime=0
-2018-05-19 14:07:44.944 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ki&rows=5} hits=143 status=0 QTime=0
-2018-05-19 14:07:45.210 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=kin&rows=5} hits=71 status=0 QTime=0
-2018-05-19 14:07:45.386 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=kinh&rows=5} hits=1898 status=0 QTime=0
-2018-05-19 14:07:56.152 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=kinh&rows=5} hits=1898 status=0 QTime=0
-2018-05-19 14:19:35.157 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Hà+Nội&df=Content&rows=100} hits=5156 status=0 QTime=1
-2018-05-19 14:19:35.262 INFO  (qtp580871917-17) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Hà+Nội&df=Title&rows=100} hits=502 status=0 QTime=1
-2018-05-19 14:19:35.297 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=Hà+Nội&df=Url&rows=100} hits=0 status=0 QTime=0
-2018-05-19 14:21:15.736 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Content&rows=100} hits=7179 status=0 QTime=2
-2018-05-19 14:21:15.784 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=435 status=0 QTime=1
-2018-05-19 14:21:15.836 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=1
-2018-05-19 14:21:41.511 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Dai+hoc+Bach+Khoa&df=Content&rows=100} hits=9491 status=0 QTime=44
-2018-05-19 14:21:41.735 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Dai+hoc+Bach+Khoa&df=Title&rows=100} hits=1790 status=0 QTime=14
-2018-05-19 14:21:41.927 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Dai+hoc+Bach+Khoa&df=Url&rows=100} hits=3488 status=0 QTime=7
-2018-05-19 14:31:34.101 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=H&rows=5} hits=247 status=0 QTime=0
-2018-05-19 14:31:34.202 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=H&rows=5} hits=247 status=0 QTime=0
-2018-05-19 14:31:34.302 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ho&rows=5} hits=1885 status=0 QTime=1
-2018-05-19 14:31:34.459 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&rows=5} hits=2176 status=0 QTime=0
-2018-05-19 14:31:34.867 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&rows=5} hits=2176 status=0 QTime=0
-2018-05-19 14:31:35.338 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&rows=100} hits=2176 status=0 QTime=0
-2018-05-19 14:31:35.398 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&rows=5} hits=2176 status=0 QTime=0
-2018-05-19 14:31:35.670 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&df=Title&rows=100} hits=590 status=0 QTime=0
-2018-05-19 14:31:35.927 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Hoa&df=Url&rows=100} hits=683 status=0 QTime=0
-2018-05-19 14:31:37.610 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Ho&rows=5} hits=1885 status=0 QTime=0
-2018-05-19 14:31:37.766 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=H&rows=5} hits=247 status=0 QTime=0
-2018-05-19 14:31:37.923 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&rows=5} hits=0 status=0 QTime=0
-2018-05-19 14:31:38.066 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&rows=5} hits=0 status=0 QTime=0
-2018-05-19 14:31:39.021 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=D&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:31:39.045 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=D&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:31:39.089 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=&rows=5} hits=0 status=0 QTime=0
-2018-05-19 14:31:39.092 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:31:39.200 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đ&rows=5} hits=424 status=0 QTime=0
-2018-05-19 14:31:43.682 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đi&rows=5} hits=1482 status=0 QTime=0
-2018-05-19 14:31:43.869 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đie&rows=5} hits=21 status=0 QTime=0
-2018-05-19 14:31:43.925 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đi&rows=5} hits=1482 status=0 QTime=0
-2018-05-19 14:31:43.927 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điê&rows=5} hits=21 status=0 QTime=0
-2018-05-19 14:31:44.026 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điêm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:31:44.068 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điêm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:31:44.139 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điê&rows=5} hits=21 status=0 QTime=0
-2018-05-19 14:31:44.141 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Đi&rows=5} hits=1482 status=0 QTime=0
-2018-05-19 14:31:44.148 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điể&rows=5} hits=21 status=0 QTime=0
-2018-05-19 14:31:44.155 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:31:44.217 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:31:49.360 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:31:49.394 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:34:03.588 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm&rows=5} hits=1289 status=0 QTime=0
-2018-05-19 14:34:03.637 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+t&rows=5} hits=1864 status=0 QTime=1
-2018-05-19 14:34:03.687 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+th&rows=5} hits=1472 status=0 QTime=1
-2018-05-19 14:34:03.883 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi&rows=5} hits=3804 status=0 QTime=0
-2018-05-19 14:34:04.152 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi&rows=5} hits=3804 status=0 QTime=0
-2018-05-19 14:34:04.994 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+d&rows=5} hits=4082 status=0 QTime=1
-2018-05-19 14:34:05.109 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi&rows=5} hits=3804 status=0 QTime=0
-2018-05-19 14:34:05.116 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đ&rows=5} hits=4082 status=0 QTime=0
-2018-05-19 14:34:05.186 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đ&rows=5} hits=4082 status=0 QTime=0
-2018-05-19 14:34:05.398 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đa&rows=5} hits=9397 status=0 QTime=2
-2018-05-19 14:34:05.518 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đai&rows=5} hits=5799 status=0 QTime=1
-2018-05-19 14:34:05.650 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đa&rows=5} hits=9397 status=0 QTime=1
-2018-05-19 14:34:05.655 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đ&rows=5} hits=4082 status=0 QTime=0
-2018-05-19 14:34:05.665 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đạ&rows=5} hits=9397 status=0 QTime=0
-2018-05-19 14:34:05.666 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại&rows=5} hits=5799 status=0 QTime=0
-2018-05-19 14:34:05.755 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại&rows=5} hits=5799 status=0 QTime=0
-2018-05-19 14:34:06.141 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại&rows=5} hits=5799 status=0 QTime=0
-2018-05-19 14:34:06.403 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+h&rows=5} hits=5944 status=0 QTime=1
-2018-05-19 14:34:06.671 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+ho&rows=5} hits=6998 status=0 QTime=1
-2018-05-19 14:34:06.801 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+hoc&rows=5} hits=7345 status=0 QTime=1
-2018-05-19 14:34:06.850 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+ho&rows=5} hits=6998 status=0 QTime=0
-2018-05-19 14:34:06.853 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+h&rows=5} hits=5944 status=0 QTime=0
-2018-05-19 14:34:06.859 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+họ&rows=5} hits=6998 status=0 QTime=0
-2018-05-19 14:34:06.862 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học&rows=5} hits=7345 status=0 QTime=0
-2018-05-19 14:34:06.896 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học&rows=5} hits=7345 status=0 QTime=0
-2018-05-19 14:34:07.055 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học&rows=5} hits=7345 status=0 QTime=0
-2018-05-19 14:34:08.462 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+n&rows=5} hits=7534 status=0 QTime=17
-2018-05-19 14:34:08.590 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+na&rows=5} hits=7441 status=0 QTime=1
-2018-05-19 14:34:08.687 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+n&rows=5} hits=7534 status=0 QTime=0
-2018-05-19 14:34:08.704 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+nă&rows=5} hits=7441 status=0 QTime=0
-2018-05-19 14:34:08.840 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+nă&rows=5} hits=7441 status=0 QTime=0
-2018-05-19 14:34:08.842 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm&rows=5} hits=10496 status=0 QTime=2
-2018-05-19 14:34:09.015 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm&rows=5} hits=10496 status=0 QTime=0
-2018-05-19 14:34:09.601 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2&rows=5} hits=11039 status=0 QTime=27
-2018-05-19 14:34:09.671 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+20&rows=5} hits=11077 status=0 QTime=2
-2018-05-19 14:34:09.757 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+201&rows=5} hits=10496 status=0 QTime=1
-2018-05-19 14:34:09.932 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&rows=5} hits=12947 status=0 QTime=1
-2018-05-19 14:34:10.172 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&rows=100} hits=12947 status=0 QTime=1
-2018-05-19 14:34:10.222 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&df=Title&rows=100} hits=3811 status=0 QTime=29
-2018-05-19 14:34:10.286 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&rows=5} hits=12947 status=0 QTime=0
-2018-05-19 14:34:10.298 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&df=Url&rows=100} hits=5003 status=0 QTime=1
-2018-05-19 14:34:17.507 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2&rows=5} hits=11039 status=0 QTime=0
-2018-05-19 14:34:17.772 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm&rows=5} hits=10496 status=0 QTime=0
-2018-05-19 14:34:17.930 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm&rows=5} hits=10496 status=0 QTime=0
-2018-05-19 14:34:18.076 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+nă&rows=5} hits=7441 status=0 QTime=0
-2018-05-19 14:34:18.228 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+n&rows=5} hits=7534 status=0 QTime=0
-2018-05-19 14:34:18.390 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học&rows=5} hits=7345 status=0 QTime=1
-2018-05-19 14:34:19.212 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+B&rows=5} hits=7486 status=0 QTime=1
-2018-05-19 14:34:19.251 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+B&rows=5} hits=7486 status=0 QTime=0
-2018-05-19 14:34:19.364 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Ba&rows=5} hits=9032 status=0 QTime=1
-2018-05-19 14:34:19.553 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bac&rows=5} hits=7853 status=0 QTime=1
-2018-05-19 14:34:19.639 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bach&rows=5} hits=7400 status=0 QTime=2
-2018-05-19 14:34:19.673 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bac&rows=5} hits=7853 status=0 QTime=0
-2018-05-19 14:34:19.679 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Ba&rows=5} hits=9032 status=0 QTime=0
-2018-05-19 14:34:19.684 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+B&rows=5} hits=7486 status=0 QTime=0
-2018-05-19 14:34:19.700 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bác&rows=5} hits=7853 status=0 QTime=0
-2018-05-19 14:34:19.700 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bá&rows=5} hits=9032 status=0 QTime=0
-2018-05-19 14:34:19.706 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách&rows=5} hits=7400 status=0 QTime=0
-2018-05-19 14:34:19.749 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách&rows=5} hits=7400 status=0 QTime=0
-2018-05-19 14:34:20.084 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách&rows=5} hits=7400 status=0 QTime=0
-2018-05-19 14:34:20.946 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+k&rows=5} hits=7485 status=0 QTime=2
-2018-05-19 14:34:21.160 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+kh&rows=5} hits=7459 status=0 QTime=1
-2018-05-19 14:34:21.361 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+kho&rows=5} hits=7660 status=0 QTime=2
-2018-05-19 14:34:21.496 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa&rows=5} hits=7501 status=0 QTime=1
-2018-05-19 14:34:21.758 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa&rows=5} hits=7501 status=0 QTime=0
-2018-05-19 14:34:21.950 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+n&rows=5} hits=7680 status=0 QTime=2
-2018-05-19 14:34:22.041 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nư&rows=5} hits=7808 status=0 QTime=3
-2018-05-19 14:34:22.095 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nư&rows=5} hits=7808 status=0 QTime=0
-2018-05-19 14:34:22.260 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nưm&rows=5} hits=7501 status=0 QTime=1
-2018-05-19 14:34:22.447 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nưm&rows=5} hits=7501 status=0 QTime=0
-2018-05-19 14:34:22.869 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nưm&rows=5} hits=7501 status=0 QTime=0
-2018-05-19 14:34:23.035 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nư&rows=5} hits=7808 status=0 QTime=0
-2018-05-19 14:34:23.195 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+n&rows=5} hits=7680 status=0 QTime=0
-2018-05-19 14:34:23.518 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+na&rows=5} hits=7595 status=0 QTime=2
-2018-05-19 14:34:23.617 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+n&rows=5} hits=7680 status=0 QTime=0
-2018-05-19 14:34:23.620 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nă&rows=5} hits=7595 status=0 QTime=0
-2018-05-19 14:34:23.677 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+nă&rows=5} hits=7595 status=0 QTime=0
-2018-05-19 14:34:23.812 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm&rows=5} hits=10588 status=0 QTime=2
-2018-05-19 14:34:23.951 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm&rows=5} hits=10588 status=0 QTime=0
-2018-05-19 14:34:24.269 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm+2&rows=5} hits=11107 status=0 QTime=3
-2018-05-19 14:34:24.463 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm+20&rows=5} hits=11151 status=0 QTime=2
-2018-05-19 14:34:24.678 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm+201&rows=5} hits=10588 status=0 QTime=1
-2018-05-19 14:34:24.887 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm+2018&rows=5} hits=12990 status=0 QTime=2
-2018-05-19 14:34:25.132 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&rows=100} hits=12947 status=0 QTime=0
-2018-05-19 14:34:25.135 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+Bách+khoa+năm+2018&rows=5} hits=12990 status=0 QTime=0
-2018-05-19 14:34:25.151 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&df=Title&rows=100} hits=3811 status=0 QTime=0
-2018-05-19 14:34:25.168 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&df=Url&rows=100} hits=5003 status=0 QTime=0
-2018-05-19 14:51:11.895 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=v&rows=5} hits=237 status=0 QTime=0
-2018-05-19 14:51:12.467 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi&rows=5} hits=2496 status=0 QTime=1
-2018-05-19 14:51:13.115 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi&rows=5} hits=2496 status=0 QTime=0
-2018-05-19 14:51:13.267 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+s&rows=5} hits=2658 status=0 QTime=1
-2018-05-19 14:51:13.451 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sa&rows=5} hits=2673 status=0 QTime=1
-2018-05-19 14:51:13.581 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao&rows=5} hits=2735 status=0 QTime=0
-2018-05-19 14:51:13.934 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao&rows=5} hits=2735 status=0 QTime=0
-2018-05-19 14:51:14.730 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+k&rows=5} hits=2877 status=0 QTime=0
-2018-05-19 14:51:14.973 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kh&rows=5} hits=2831 status=0 QTime=0
-2018-05-19 14:51:15.225 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kho&rows=5} hits=3199 status=0 QTime=1
-2018-05-19 14:51:15.365 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kho&rows=5} hits=3199 status=0 QTime=0
-2018-05-19 14:51:15.371 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kh&rows=5} hits=2831 status=0 QTime=0
-2018-05-19 14:51:15.377 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khơ&rows=5} hits=3199 status=0 QTime=0
-2018-05-19 14:51:15.389 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khơi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:15.454 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khơi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:15.477 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khơi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:15.594 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khơ&rows=5} hits=3199 status=0 QTime=0
-2018-05-19 14:51:15.597 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kh&rows=5} hits=2831 status=0 QTime=0
-2018-05-19 14:51:15.600 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khở&rows=5} hits=3199 status=0 QTime=2
-2018-05-19 14:51:15.604 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khởi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:15.675 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khởi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:15.875 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khởi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:16.554 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khởi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:16.726 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khở&rows=5} hits=3199 status=0 QTime=0
-2018-05-19 14:51:16.896 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kh&rows=5} hits=2831 status=0 QTime=0
-2018-05-19 14:51:17.065 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+k&rows=5} hits=2877 status=0 QTime=0
-2018-05-19 14:51:17.224 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao&rows=5} hits=2735 status=0 QTime=0
-2018-05-19 14:51:17.911 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+k&rows=5} hits=2877 status=0 QTime=0
-2018-05-19 14:51:18.082 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kh&rows=5} hits=2831 status=0 QTime=0
-2018-05-19 14:51:18.289 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+kho&rows=5} hits=3199 status=0 QTime=0
-2018-05-19 14:51:18.470 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:18.905 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi&rows=5} hits=3519 status=0 QTime=0
-2018-05-19 14:51:19.111 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+n&rows=5} hits=3802 status=0 QTime=1
-2018-05-19 14:51:19.284 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+ng&rows=5} hits=3585 status=0 QTime=1
-2018-05-19 14:51:19.406 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+ngh&rows=5} hits=3542 status=0 QTime=1
-2018-05-19 14:51:19.606 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghi&rows=5} hits=5080 status=0 QTime=1
-2018-05-19 14:51:19.951 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghie&rows=5} hits=3529 status=0 QTime=1
-2018-05-19 14:51:20.054 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep&rows=5} hits=4198 status=0 QTime=0
-2018-05-19 14:51:20.325 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep&rows=5} hits=4198 status=0 QTime=0
-2018-05-19 14:51:21.043 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+h&rows=5} hits=4374 status=0 QTime=1
-2018-05-19 14:51:21.160 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+ha&rows=5} hits=5698 status=0 QTime=1
-2018-05-19 14:51:21.233 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay&rows=5} hits=4623 status=0 QTime=1
-2018-05-19 14:51:21.433 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay&rows=5} hits=4623 status=0 QTime=0
-2018-05-19 14:51:21.914 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+t&rows=5} hits=5048 status=0 QTime=1
-2018-05-19 14:51:22.003 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+th&rows=5} hits=4756 status=0 QTime=1
-2018-05-19 14:51:22.191 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+tha&rows=5} hits=4713 status=0 QTime=1
-2018-05-19 14:51:22.318 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that&rows=5} hits=4842 status=0 QTime=1
-2018-05-19 14:51:22.769 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that&rows=5} hits=4842 status=0 QTime=0
-2018-05-19 14:51:22.989 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+b&rows=5} hits=5022 status=0 QTime=1
-2018-05-19 14:51:23.133 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+ba&rows=5} hits=7130 status=0 QTime=1
-2018-05-19 14:51:23.274 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&rows=5} hits=5366 status=0 QTime=1
-2018-05-19 14:51:23.714 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=100} hits=9151 status=0 QTime=1
-2018-05-19 14:51:23.750 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&rows=5} hits=5366 status=0 QTime=0
-2018-05-19 14:51:23.847 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 14:51:23.926 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 14:51:41.967 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=visao+khoi+nghiep+hay+that+bai&rows=5} hits=3266 status=0 QTime=1
-2018-05-19 14:51:42.117 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vsao+khoi+nghiep+hay+that+bai&rows=5} hits=3266 status=0 QTime=1
-2018-05-19 14:51:42.280 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=sao+khoi+nghiep+hay+that+bai&rows=5} hits=3598 status=0 QTime=1
-2018-05-19 14:51:43.111 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tsao+khoi+nghiep+hay+that+bai&rows=5} hits=3266 status=0 QTime=0
-2018-05-19 14:51:43.250 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tasao+khoi+nghiep+hay+that+bai&rows=5} hits=3266 status=0 QTime=1
-2018-05-19 14:51:43.423 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=taisao+khoi+nghiep+hay+that+bai&rows=5} hits=3266 status=0 QTime=0
-2018-05-19 14:51:43.695 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+bai&rows=5} hits=8372 status=0 QTime=1
-2018-05-19 14:51:44.335 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=100} hits=9151 status=0 QTime=0
-2018-05-19 14:51:44.355 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 14:51:44.372 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+bai&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 14:51:44.373 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 14:51:47.514 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=100} hits=9151 status=0 QTime=0
-2018-05-19 14:51:47.537 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 14:51:47.557 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 14:51:47.557 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+bai&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 14:52:36.055 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Content&rows=100} hits=10440 status=0 QTime=34
-2018-05-19 14:52:36.364 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=1385 status=0 QTime=0
-2018-05-19 14:52:36.627 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2683 status=0 QTime=11
-2018-05-19 15:03:13.368 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=7495 status=0 QTime=10
-2018-05-19 15:03:13.413 INFO  (qtp580871917-18) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=400 status=0 QTime=0
-2018-05-19 15:03:13.444 INFO  (qtp580871917-20) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1984 status=0 QTime=0
-2018-05-19 15:03:53.373 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=7495 status=0 QTime=0
-2018-05-19 15:03:53.396 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=400 status=0 QTime=0
-2018-05-19 15:03:53.420 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1984 status=0 QTime=0
-2018-05-19 15:05:05.892 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=t&rows=5} hits=626 status=0 QTime=0
-2018-05-19 15:05:05.998 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ta&rows=5} hits=608 status=0 QTime=0
-2018-05-19 15:05:06.126 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=1
-2018-05-19 15:05:06.511 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:05:08.024 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+s&rows=5} hits=6444 status=0 QTime=0
-2018-05-19 15:05:08.990 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sa&rows=5} hits=6476 status=0 QTime=1
-2018-05-19 15:05:09.112 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:05:09.385 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:05:09.871 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:05:09.984 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=1
-2018-05-19 15:05:10.122 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kho&rows=5} hits=6960 status=0 QTime=1
-2018-05-19 15:05:10.293 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=1
-2018-05-19 15:05:11.133 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:05:11.316 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+n&rows=5} hits=7334 status=0 QTime=1
-2018-05-19 15:05:11.398 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ng&rows=5} hits=7197 status=0 QTime=1
-2018-05-19 15:05:11.513 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ngh&rows=5} hits=7166 status=0 QTime=1
-2018-05-19 15:05:11.709 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghi&rows=5} hits=8107 status=0 QTime=0
-2018-05-19 15:05:11.847 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghie&rows=5} hits=7151 status=0 QTime=1
-2018-05-19 15:05:12.334 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:05:12.864 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:05:13.077 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+l&rows=5} hits=7609 status=0 QTime=1
-2018-05-19 15:05:13.232 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=1
-2018-05-19 15:05:13.272 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:05:13.504 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:05:13.686 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:05:14.046 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:05:14.557 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+t&rows=5} hits=8678 status=0 QTime=1
-2018-05-19 15:05:14.837 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+th&rows=5} hits=8482 status=0 QTime=1
-2018-05-19 15:05:14.972 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+tha&rows=5} hits=8469 status=0 QTime=1
-2018-05-19 15:05:15.089 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that&rows=5} hits=8568 status=0 QTime=1
-2018-05-19 15:05:15.407 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that&rows=5} hits=8568 status=0 QTime=0
-2018-05-19 15:05:15.629 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that+b&rows=5} hits=8683 status=0 QTime=1
-2018-05-19 15:05:15.743 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that+ba&rows=5} hits=9989 status=0 QTime=2
-2018-05-19 15:05:15.869 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that+bai&rows=5} hits=8894 status=0 QTime=1
-2018-05-19 15:05:16.237 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=100} hits=9151 status=0 QTime=0
-2018-05-19 15:05:16.256 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 15:05:16.299 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 15:05:16.310 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+that+bai&rows=5} hits=8894 status=0 QTime=0
-2018-05-19 15:05:51.282 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=100} hits=9151 status=0 QTime=0
-2018-05-19 15:05:51.302 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 15:05:51.322 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 15:07:26.592 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai++that+bai&rows=5} hits=8894 status=0 QTime=0
-2018-05-19 15:07:26.792 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+h+that+bai&rows=5} hits=8992 status=0 QTime=1
-2018-05-19 15:07:26.928 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:07:26.962 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:07:27.184 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay++that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:07:28.119 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:07:28.383 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:07:28.390 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=12845 status=0 QTime=54
-2018-05-19 15:07:28.465 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=1984 status=0 QTime=0
-2018-05-19 15:07:28.561 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1984 status=0 QTime=1
-2018-05-19 15:08:19.688 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=t&rows=5} hits=626 status=0 QTime=0
-2018-05-19 15:08:19.839 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ta&rows=5} hits=608 status=0 QTime=0
-2018-05-19 15:08:20.441 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:08:21.291 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:08:21.741 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+s&rows=5} hits=6444 status=0 QTime=0
-2018-05-19 15:08:21.908 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sa&rows=5} hits=6476 status=0 QTime=0
-2018-05-19 15:08:22.017 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:08:22.308 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:08:22.960 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:08:23.170 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:08:23.549 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khi&rows=5} hits=8712 status=0 QTime=1
-2018-05-19 15:08:24.033 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:08:24.548 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kho&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:08:24.711 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:08:24.939 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:08:25.157 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+n&rows=5} hits=7334 status=0 QTime=0
-2018-05-19 15:08:25.345 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ng&rows=5} hits=7197 status=0 QTime=0
-2018-05-19 15:08:25.453 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ngh&rows=5} hits=7166 status=0 QTime=0
-2018-05-19 15:08:25.656 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghi&rows=5} hits=8107 status=0 QTime=0
-2018-05-19 15:08:25.790 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghie&rows=5} hits=7151 status=0 QTime=0
-2018-05-19 15:08:26.702 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:08:26.944 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:08:27.383 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+l&rows=5} hits=7609 status=0 QTime=0
-2018-05-19 15:08:27.550 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+la&rows=5} hits=10218 status=0 QTime=1
-2018-05-19 15:08:27.624 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:08:27.980 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai&rows=5} hits=8396 status=0 QTime=0
-2018-05-19 15:08:28.306 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+h&rows=5} hits=8500 status=0 QTime=0
-2018-05-19 15:08:28.414 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+ha&rows=5} hits=9223 status=0 QTime=1
-2018-05-19 15:08:28.498 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay&rows=5} hits=8669 status=0 QTime=1
-2018-05-19 15:08:28.700 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay&rows=5} hits=8669 status=0 QTime=0
-2018-05-19 15:08:29.078 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+t&rows=5} hits=8934 status=0 QTime=1
-2018-05-19 15:08:29.249 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+th&rows=5} hits=8751 status=0 QTime=1
-2018-05-19 15:08:29.380 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+tha&rows=5} hits=8730 status=0 QTime=1
-2018-05-19 15:08:30.200 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that&rows=5} hits=8833 status=0 QTime=1
-2018-05-19 15:08:30.347 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that&rows=5} hits=8833 status=0 QTime=0
-2018-05-19 15:08:30.729 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+b&rows=5} hits=8943 status=0 QTime=1
-2018-05-19 15:08:30.809 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+ba&rows=5} hits=10193 status=0 QTime=1
-2018-05-19 15:08:30.946 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:08:31.223 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=12845 status=0 QTime=0
-2018-05-19 15:08:31.250 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=1984 status=0 QTime=0
-2018-05-19 15:08:31.267 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1984 status=0 QTime=0
-2018-05-19 15:08:31.332 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&rows=5} hits=9151 status=0 QTime=0
-2018-05-19 15:09:10.242 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=9910 status=0 QTime=19
-2018-05-19 15:09:10.365 INFO  (qtp580871917-16) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=820 status=0 QTime=0
-2018-05-19 15:09:10.451 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1789 status=0 QTime=0
-2018-05-19 15:11:28.066 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Content&rows=100} hits=9910 status=0 QTime=0
-2018-05-19 15:11:28.089 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Title&rows=100} hits=820 status=0 QTime=0
-2018-05-19 15:11:28.105 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=vi+sao+khoi+nghiep+hay+that+bai&df=Url&rows=100} hits=1789 status=0 QTime=0
-2018-05-19 15:12:33.034 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=t&rows=5} hits=626 status=0 QTime=0
-2018-05-19 15:12:33.277 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ta&rows=5} hits=608 status=0 QTime=0
-2018-05-19 15:12:33.402 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:12:33.680 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:12:34.237 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+s&rows=5} hits=6444 status=0 QTime=0
-2018-05-19 15:12:34.404 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sa&rows=5} hits=6476 status=0 QTime=0
-2018-05-19 15:12:34.490 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:12:34.721 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:12:35.239 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:12:35.381 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:12:36.122 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kho&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:12:36.298 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:12:36.321 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kho&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:12:36.332 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:12:36.335 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khơ&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:12:36.350 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khơi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:12:36.391 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khơi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:12:36.852 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khơ&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:12:37.881 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:12:38.039 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:12:38.633 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+ko&rows=5} hits=6598 status=0 QTime=0
-2018-05-19 15:12:38.796 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+koi&rows=5} hits=6597 status=0 QTime=1
-2018-05-19 15:12:39.390 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+ko&rows=5} hits=6598 status=0 QTime=0
-2018-05-19 15:12:39.550 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:12:40.126 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:12:40.344 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+kho&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:12:40.688 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:12:41.116 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:12:41.394 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+n&rows=5} hits=7334 status=0 QTime=0
-2018-05-19 15:12:41.545 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ng&rows=5} hits=7197 status=0 QTime=0
-2018-05-19 15:12:41.659 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+ngh&rows=5} hits=7166 status=0 QTime=0
-2018-05-19 15:12:41.838 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghi&rows=5} hits=8107 status=0 QTime=0
-2018-05-19 15:12:41.955 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghie&rows=5} hits=7151 status=0 QTime=0
-2018-05-19 15:12:42.106 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:12:42.464 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:12:42.673 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+h&rows=5} hits=7638 status=0 QTime=0
-2018-05-19 15:12:42.802 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+ha&rows=5} hits=8459 status=0 QTime=0
-2018-05-19 15:12:42.869 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay&rows=5} hits=7831 status=0 QTime=1
-2018-05-19 15:12:43.083 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay&rows=5} hits=7831 status=0 QTime=0
-2018-05-19 15:12:43.357 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+t&rows=5} hits=8126 status=0 QTime=0
-2018-05-19 15:12:43.489 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+th&rows=5} hits=7935 status=0 QTime=0
-2018-05-19 15:12:43.658 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+tha&rows=5} hits=7902 status=0 QTime=1
-2018-05-19 15:12:43.749 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+th&rows=5} hits=7935 status=0 QTime=0
-2018-05-19 15:12:43.754 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+thả&rows=5} hits=7902 status=0 QTime=0
-2018-05-19 15:12:43.771 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+thả&rows=5} hits=7902 status=0 QTime=0
-2018-05-19 15:12:44.686 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+th&rows=5} hits=7935 status=0 QTime=0
-2018-05-19 15:12:45.009 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+tht&rows=5} hits=7831 status=0 QTime=1
-2018-05-19 15:12:45.519 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+th&rows=5} hits=7935 status=0 QTime=0
-2018-05-19 15:12:45.717 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+tha&rows=5} hits=7902 status=0 QTime=0
-2018-05-19 15:12:46.255 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:12:46.526 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:12:46.958 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+b&rows=5} hits=8147 status=0 QTime=2
-2018-05-19 15:12:47.071 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+ba&rows=5} hits=9590 status=0 QTime=3
-2018-05-19 15:12:47.132 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+bai&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 15:12:48.092 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Content&rows=100} hits=14257 status=0 QTime=6
-2018-05-19 15:12:48.118 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Title&rows=100} hits=2956 status=0 QTime=0
-2018-05-19 15:12:48.130 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+hay+that+bai&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 15:12:48.139 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai+sao+khoi+nghiep+lai+hay+that+bai&df=Url&rows=100} hits=2951 status=0 QTime=0
-2018-05-19 15:15:47.400 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526742948051} status=0 QTime=0
-2018-05-19 15:15:47.403 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526742948560} status=0 QTime=3
-2018-05-19 15:15:47.403 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Kinh+tế+thế+giới+có+nhiều+biến+động&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=kinh+tế&wt=json&_=1526742948560} status=0 QTime=3
-2018-05-19 15:15:47.409 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526742948051} status=0 QTime=10
-2018-05-19 15:18:34.196 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526743113904} status=0 QTime=0
-2018-05-19 15:18:34.204 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526743113905} status=0 QTime=6
-2018-05-19 15:18:34.206 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526743114169} status=0 QTime=0
-2018-05-19 15:18:34.209 INFO  (qtp580871917-13) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/replication params={wt=json&command=details&_=1526743114173} status=0 QTime=1
-2018-05-19 15:18:34.215 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526743113905&ts=1526743113905} status=503 QTime=0
-2018-05-19 15:18:34.222 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/admin/system params={wt=json&_=1526743114169} status=0 QTime=12
-2018-05-19 15:19:08.504 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=t&rows=5} hits=626 status=0 QTime=0
-2018-05-19 15:19:08.833 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=ta&rows=5} hits=608 status=0 QTime=0
-2018-05-19 15:19:08.952 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tai&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:19:09.257 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:19:09.494 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại&rows=5} hits=6332 status=0 QTime=0
-2018-05-19 15:19:09.639 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+s&rows=5} hits=6444 status=0 QTime=0
-2018-05-19 15:19:09.914 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sa&rows=5} hits=6476 status=0 QTime=0
-2018-05-19 15:19:10.092 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:19:10.381 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao&rows=5} hits=6596 status=0 QTime=0
-2018-05-19 15:19:11.161 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+k&rows=5} hits=6704 status=0 QTime=0
-2018-05-19 15:19:11.372 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+kh&rows=5} hits=6664 status=0 QTime=0
-2018-05-19 15:19:11.621 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+kho&rows=5} hits=6960 status=0 QTime=0
-2018-05-19 15:19:11.800 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khơi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:19:11.840 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khơi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:19:12.079 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:19:12.238 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi&rows=5} hits=7148 status=0 QTime=0
-2018-05-19 15:19:12.437 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+n&rows=5} hits=7334 status=0 QTime=0
-2018-05-19 15:19:12.776 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+ng&rows=5} hits=7197 status=0 QTime=0
-2018-05-19 15:19:12.881 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+ngh&rows=5} hits=7166 status=0 QTime=0
-2018-05-19 15:19:13.062 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghi&rows=5} hits=8107 status=0 QTime=0
-2018-05-19 15:19:13.261 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghie&rows=5} hits=7151 status=0 QTime=0
-2018-05-19 15:19:13.375 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiê&rows=5} hits=7151 status=0 QTime=0
-2018-05-19 15:19:13.506 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiêp&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:19:13.744 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:19:13.967 INFO  (qtp580871917-20) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp&rows=5} hits=7514 status=0 QTime=0
-2018-05-19 15:19:14.392 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+h&rows=5} hits=7638 status=0 QTime=0
-2018-05-19 15:19:14.493 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+ha&rows=5} hits=8459 status=0 QTime=0
-2018-05-19 15:19:14.574 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay&rows=5} hits=7831 status=0 QTime=0
-2018-05-19 15:19:14.787 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay&rows=5} hits=7831 status=0 QTime=0
-2018-05-19 15:19:15.068 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+t&rows=5} hits=8126 status=0 QTime=0
-2018-05-19 15:19:15.224 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+th&rows=5} hits=7935 status=0 QTime=0
-2018-05-19 15:19:15.414 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+tha&rows=5} hits=7902 status=0 QTime=0
-2018-05-19 15:19:15.526 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thât&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:19:15.540 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thât&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:19:15.704 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:19:15.817 INFO  (qtp580871917-22) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất&rows=5} hits=8021 status=0 QTime=0
-2018-05-19 15:19:16.403 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+b&rows=5} hits=8147 status=0 QTime=0
-2018-05-19 15:19:16.531 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+ba&rows=5} hits=9590 status=0 QTime=0
-2018-05-19 15:19:16.919 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+bao&rows=5} hits=9687 status=0 QTime=1
-2018-05-19 15:19:17.375 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+ba&rows=5} hits=9590 status=0 QTime=0
-2018-05-19 15:19:17.676 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+bai&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 15:19:17.850 INFO  (qtp580871917-16) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+bại&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 15:19:18.152 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+hay+thất+bại&rows=5} hits=8372 status=0 QTime=0
-2018-05-19 15:19:18.214 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Content&rows=100} hits=14681 status=0 QTime=91
-2018-05-19 15:19:18.240 INFO  (qtp580871917-18) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Title&rows=100} hits=5421 status=0 QTime=2
-2018-05-19 15:19:18.269 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Url&rows=100} hits=5632 status=0 QTime=2
-2018-05-19 15:20:04.574 INFO  (qtp580871917-19) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Content&rows=100} hits=14643 status=0 QTime=1
-2018-05-19 15:20:04.631 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Title&rows=100} hits=4542 status=0 QTime=0
-2018-05-19 15:20:04.655 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Url&rows=100} hits=3647 status=0 QTime=0
-2018-05-19 15:23:40.535 INFO  (qtp580871917-14) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Content&rows=100} hits=14643 status=0 QTime=0
-2018-05-19 15:23:40.564 INFO  (qtp580871917-16) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Title&rows=100} hits=4542 status=0 QTime=0
-2018-05-19 15:23:40.585 INFO  (qtp580871917-22) [   x:base_index] o.a.s.c.S.Request [base_index]  webapp=/solr path=/select params={q=tại+sao+khởi+nghiệp+lại+hay+thất+bại+?&df=Url&rows=100} hits=3647 status=0 QTime=0
-2018-05-19 15:28:41.060 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=57624756
-2018-05-19 15:28:41.061 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2018-05-19 15:28:41.061 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2018-05-19 15:28:41.061 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2018-05-19 15:28:41.062 INFO  (coreCloseExecutor-32-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore [vi_data_test]  CLOSING SolrCore org.apache.solr.core.SolrCore@1429012b
-2018-05-19 15:28:41.062 INFO  (coreCloseExecutor-32-thread-1) [   x:vi_data_test] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data_test, tag=338231595
-2018-05-19 15:28:41.063 INFO  (coreCloseExecutor-32-thread-2) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@571ae88e
-2018-05-19 15:28:41.063 INFO  (coreCloseExecutor-32-thread-2) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=1461381262
-2018-05-19 15:28:41.064 INFO  (coreCloseExecutor-32-thread-3) [   x:base_index] o.a.s.c.SolrCore [base_index]  CLOSING SolrCore org.apache.solr.core.SolrCore@644bff87
-2018-05-19 15:28:41.064 INFO  (coreCloseExecutor-32-thread-3) [   x:base_index] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.base_index, tag=1682702215
-2018-05-19 15:28:41.075 INFO  (coreCloseExecutor-32-thread-4) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@7752b6ab
-2018-05-19 15:28:41.075 INFO  (coreCloseExecutor-32-thread-4) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=2001909419
-2018-05-19 15:28:41.075 INFO  (coreCloseExecutor-32-thread-5) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@2668f67f
-2018-05-19 15:28:41.075 INFO  (coreCloseExecutor-32-thread-5) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=644413055
+2018-05-21 07:50:39.595 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-21 07:50:40.025 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-21 07:50:40.039 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-21T07:50:40.028370Z
+2018-05-21 07:50:40.040 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-21 07:50:40.107 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 07:50:40.117 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
+2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 7 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [index_khong_dau, vi_data, index_base, base_index, index_filter, tong_hop, search]
+2018-05-21 07:50:40.823 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-21 07:50:40.946 INFO  (main) [   ] o.e.j.s.Server Started @2190ms
+2018-05-21 07:50:40.967 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrResourceLoader [index_khong_dau] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrResourceLoader [index_base] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:41.207 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.320 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.325 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.538 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema [index_khong_dau] Schema name=default-config
+2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
+2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema [index_base] Schema name=default-config
+2018-05-21 07:50:42.460 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.463 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.467 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.525 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.CoreContainer Creating SolrCore 'index_khong_dau' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau, trusted=true
+2018-05-21 07:50:42.547 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.CoreContainer Creating SolrCore 'index_base' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base, trusted=true
+2018-05-21 07:50:42.566 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore [[index_base] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/data/]
+2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
+2018-05-21 07:50:42.600 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore [[index_khong_dau] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/data/]
+2018-05-21 07:50:42.643 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:42.644 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:42.645 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.256 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.259 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.265 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.266 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.SolrIndexSearcher Opening [Searcher@63f4374b[index_khong_dau] main]
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.SolrIndexSearcher Opening [Searcher@16d66ca2[index_base] main]
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c01d24a[vi_data] main]
+2018-05-21 07:50:43.406 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
+2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/conf
+2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/conf
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.433 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.438 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.452 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.455 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.457 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.458 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.533 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.535 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.540 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.SolrCore [index_base] Registered new searcher Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.542 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau] Registered new searcher Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.615 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [base_index] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.628 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [index_filter] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.637 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.652 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.658 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.748 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.755 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [base_index] Schema name=default-config
+2018-05-21 07:50:43.779 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [index_filter] Schema name=default-config
+2018-05-21 07:50:43.845 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
+2018-05-21 07:50:44.213 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.230 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.240 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'base_index' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index, trusted=true
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[base_index] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/data/]
+2018-05-21 07:50:44.272 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
+2018-05-21 07:50:44.294 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.298 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'index_filter' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter, trusted=true
+2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[index_filter] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/data/]
+2018-05-21 07:50:44.311 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@50f9d591[base_index] main]
+2018-05-21 07:50:44.382 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/conf
+2018-05-21 07:50:44.383 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.384 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.386 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.393 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [base_index] Registered new searcher Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7bbcf729[tong_hop] main]
+2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
+2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.400 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 07:50:44.402 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6439b6f1[index_filter] main]
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/conf
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.407 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.409 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.SolrCore [index_filter] Registered new searcher Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:44.435 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:44.518 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:44.560 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
+2018-05-21 07:50:44.775 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.814 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
+2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
+2018-05-21 07:50:44.820 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.870 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a99c7e8[search] main]
+2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
+2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.873 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.874 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.938 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 07:51:45.568 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=đại+học+bách+khoa&df=Content&rows=20} hits=4654 status=0 QTime=73
+2018-05-21 07:52:35.386 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@6946652
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.c.SolrCore [index_base]  CLOSING SolrCore org.apache.solr.core.SolrCore@3c1c1b76
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=110388818
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_base, tag=1008474998
+2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau]  CLOSING SolrCore org.apache.solr.core.SolrCore@39881507
+2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_khong_dau, tag=965219591
+2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b28f7ac
+2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=1797846956
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.c.SolrCore [index_filter]  CLOSING SolrCore org.apache.solr.core.SolrCore@177fa1f0
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_filter, tag=394240496
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.c.SolrCore [base_index]  CLOSING SolrCore org.apache.solr.core.SolrCore@68fbb6d7
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.base_index, tag=1761326807
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@21c3392d
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=566442285

@@ -41,6 +41,7 @@ Route::get('solr/api/get/base/key_real_time','BaseController@key_real_time');
 
 // NLP for searching
 
-Route::get('solr/check_spell','SolrController@spell_check');
-Route::get('solr/delete/db','SolrController@delete_all_db');
-Route::get('solr/top-key','BaseController@get_top_key');
+Route::get('solr/check_spell', 'SolrController@spell_check');
+Route::get('solr/delete/db'  , 'SolrController@delete_all_db');
+Route::get('solr/top-key'    , 'SolrController@get_top_key');
+Route::get('solr/json-key'   , 'SolrController@json_key');

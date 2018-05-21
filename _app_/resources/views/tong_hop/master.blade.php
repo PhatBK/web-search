@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tong_hop Index Map Search</title>
+    <title>Index Khong Dau Mapping Search</title>
     <base href="{{ asset('') }}" target="_blank, _self, _parent, _top">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     {{-- <link rel="stylesheet" href="css/autocomplete.css" type="text/css"> --}}

@@ -39,7 +39,8 @@ class Vi_DataController extends Controller
             $key_s = $key_n;
         }
 
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/vi_data/']);
+        // $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/vi_data/']);
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_filter/']);
         /* 
          * Phần xây dựng các truy vấn khác nhau
          * Mỗi Truy vấn là một bộ tham số khác nhau
@@ -49,14 +50,14 @@ class Vi_DataController extends Controller
         // xây dựng truy vấn trên các trường của dữ liệu
         $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=20');
 
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
+        // $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
+        // $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content = $response_content->getBody();
 
-        $content_title = $response_title->getBody();
-        $content_url = $response_url->getBody();
+        // $content_title = $response_title->getBody();
+        // $content_url = $response_url->getBody();
         /*
             chu y: json_decode($json) ==> object(stdClass)
             con : json_decode($json,true) ==> array()
@@ -88,7 +89,12 @@ class Vi_DataController extends Controller
                 $thongke->save();
             }
         }
-        
+        $suggestions =    DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(50)
+                                                ->get();
         // Phần trả lại kết quả cho giao diện
         return view('vi_data.result',
                     [
@@ -100,6 +106,7 @@ class Vi_DataController extends Controller
                     'key' => $key,
                     'results '=> $results ,
                     'spell' => $spell,
+                    'suggestions' => $suggestions
                     ]
         );
     }
@@ -108,7 +115,7 @@ class Vi_DataController extends Controller
         $key = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $data = [];
         $i = 0;
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/vi_data/']);
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_filter/']);
         $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=5');
         $content_content = $response_content->getBody();
         $results        = json_decode($content_content->getContents(),true);
@@ -181,7 +188,13 @@ class Vi_DataController extends Controller
         //                                         ->orderBy('soluong','desc')
         //                                         ->take(20)
         //                                         ->get();
-        $tukhoa_suggest = DB::table('key_search')->distinct()->get();
+        $tukhoa_suggest=DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(100)
+                                                ->get();
+
         foreach ($tukhoa_suggest as $sg){
             $jaccard=$this->jaccard($sg->key,$string);
             if(0.55<$jaccard and $jaccard<1){

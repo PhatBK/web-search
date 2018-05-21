@@ -13,6 +13,7 @@ use App\Models\KeySearch;
 use function GuzzleHttp\json_decode;
 
 use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\View;
 
 use NlpTools\Tokenizers\WhitespaceTokenizer;
@@ -40,7 +41,8 @@ class SolrController extends Controller
             $key_s = $key_n;
         }
         
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
+        // $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_khong_dau/']);
         /* 
          * Phần xây dựng các truy vấn khác nhau
          * Mỗi Truy vấn là một bộ tham số khác nhau
@@ -50,14 +52,14 @@ class SolrController extends Controller
         // xây dựng truy vấn trên các trường của dữ liệu
         $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=20');
 
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
+        // $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
+        // $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content = $response_content->getBody();
 
-        $content_title = $response_title->getBody();
-        $content_url = $response_url->getBody();
+        // $content_title = $response_title->getBody();
+        // $content_url = $response_url->getBody();
         /*
             chu y: json_decode($json) ==> object(stdClass)
             con : json_decode($json,true) ==> array()
@@ -94,6 +96,12 @@ class SolrController extends Controller
                 $thongke->save();
             }
         }
+        $suggestions =    DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(50)
+                                                ->get();
         // Phần trả lại kết quả cho giao diện
         return view('tong_hop.result',
                     [
@@ -104,7 +112,8 @@ class SolrController extends Controller
                     'timeSearch' => $timeSearch,
                     'key' => $key,
                     'results '=> $results ,
-                    'spell' => $spell
+                    'spell' => $spell,
+                    'suggestions' => $suggestions
                     ]
         );
     }
@@ -113,8 +122,8 @@ class SolrController extends Controller
         $key = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $data = [];
         $i = 0;
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
-        $response_content   = $client->request('GET', 'select?q='.$key.'&rows=5');
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_khong_dau/']);
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=5');
         $content_content = $response_content->getBody();
         $results        = json_decode($content_content->getContents(),true);
 
@@ -179,8 +188,12 @@ class SolrController extends Controller
         return $jaccard;
     }
     public function spell_check($string){
-        // $tukhoa_suggest=DB::table('key_search')->select(DB::raw('key,count(*) as soluong'))->groupBy('key')->orderBy('soluong','desc')->take(20)->get();
-        $tukhoa_suggest = DB::table('key_search')->distinct()->get();
+        $tukhoa_suggest=DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(100)
+                                                ->get();
 
         foreach ($tukhoa_suggest as $sg){
             $jaccard=$this->jaccard($sg->key,$string);
@@ -202,5 +215,19 @@ class SolrController extends Controller
             $key->delete();
         }
         return "Deleted all data base... ahihi";
+    }
+    public function json_key(){
+        $key_searchs = KeySearch::all();
+        $json = response()->json($key_searchs,200);
+        dd($json);
+    }
+    public function get_top_key(){
+        $tukhoa_suggest=DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(50)
+                                                ->get();
+        dd($tukhoa_suggest);
     }
 }

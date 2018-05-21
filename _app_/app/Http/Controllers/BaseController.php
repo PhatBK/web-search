@@ -27,8 +27,9 @@ class BaseController extends Controller
     public function get_solr_base_api(Request $request){
 
         $key = $request->search;
+        // $key_1 = preg_replace('/[\\]/',"",$key);
+        $key_n = preg_replace('/[:?<>!@#$%^&*~\/]/',"",$key);
 
-        $key_n = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $spell= $this->spell_check($key_n);
         
         if($spell != null){
@@ -37,18 +38,18 @@ class BaseController extends Controller
             $key_s = $key_n;
         }
         
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/base_index/']);
+        // $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/base_index/']);
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_base/']);
 
         $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=20');
-
-        $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
-        $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
+        // $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
+        // $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
         $content_content    = $response_content->getBody();
 
-        $content_title      = $response_title->getBody();
-        $content_url        = $response_url->getBody();
+        // $content_title      = $response_title->getBody();
+        // $content_url        = $response_url->getBody();
         /*
             chu y: json_decode($json) ==> object(stdClass)
             con : json_decode($json,true) ==> array()
@@ -86,7 +87,12 @@ class BaseController extends Controller
             }
         }
         // Phần trả lại kết quả cho giao diện
-        $suggestions = KeySearch::all();
+        $suggestions =    DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(50)
+                                                ->get();
 
         return view('base.result',
                     [
@@ -106,8 +112,8 @@ class BaseController extends Controller
         $key = $request->key;
         $data = [];
         $i = 0;
-        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/base_index/']);
-        $response_content   = $client->request('GET', 'select?q='.$key.'&rows=5');
+        $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/index_base/']);
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key.'&rows=5');
         $content_content = $response_content->getBody();
         $results        = json_decode($content_content->getContents(),true);
 
@@ -178,7 +184,13 @@ class BaseController extends Controller
         //                                         ->orderBy('soluong','desc')
         //                                         ->take(20)
         //                                         ->get();
-        $tukhoa_suggest = DB::table('key_search')->distinct()->get();
+        // dd($tukhoa_suggest);
+        $tukhoa_suggest=DB::table('key_search')
+                                                ->select('key', DB::raw('count(*) as soluong'))
+                                                ->groupBy('key')
+                                                ->orderBy('soluong','desc')
+                                                ->take(100)
+                                                ->get();
 
         foreach ($tukhoa_suggest as $sg){
             $jaccard=$this->jaccard($sg->key,$string);
@@ -188,13 +200,5 @@ class BaseController extends Controller
         }
         return null;
     }
-    public function get_top_key(){
-        $result = DB::table('key_search')
-                                                ->select(DB::raw('count(*) as soluong'))
-                                                ->groupBy('key')
-                                                ->orderBy('soluong','desc')
-                                                ->take(20)
-                                                ->get();
-        dd($result);
-    }
+    
 }
