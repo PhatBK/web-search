@@ -31,12 +31,13 @@ class SolrController extends Controller
 
         $key = $request->search;
 
+        $key_n = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $spell= $this->spell_check($key);
         
         if($spell != null){
             $key_s = $spell;
         }else{
-            $key_s = $key;
+            $key_s = $key_n;
         }
         
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);
@@ -47,7 +48,7 @@ class SolrController extends Controller
          * Ahihi
         */
         // xây dựng truy vấn trên các trường của dữ liệu
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=100');
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=20');
 
         $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
         $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
@@ -109,6 +110,7 @@ class SolrController extends Controller
     }
     public function key_real_time(Request $request){
         $key = $request->key;
+        $key = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $data = [];
         $i = 0;
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/tong_hop/']);

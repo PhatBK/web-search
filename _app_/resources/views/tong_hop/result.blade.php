@@ -2,6 +2,8 @@
 @section('content')
 <div class="container">
     <hr>
+    <b style="font-size: 12px;color: red;">Bạn đang ở trang index theo kiểu bỏ dấu !!!</b>
+    <br>
     <i>Khoảng: &nbsp; <u>{{ $numResult }}</u> &nbsp;kết quả (khoảng:&nbsp;<u>{{ $timeSearch }}</u>&nbsp;giây)</i>
     <br>
     @if ($spell != null)
@@ -15,34 +17,36 @@
             <b>
              @php
                  $title  = $doc['Title'][0];
-                 $key_n = preg_replace('/[\:]/',"",$key);
-                 $result = str_replace(" ".$key_n." ",'<b style="color:blue;">'." ".$key_n." ".'</b>',$title);
+                 $key_n = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
                  
-                 $key_all = preg_split("/[\s,]+/",$key_n);
-            
-
+                 $result  = str_replace($key_n,'<b style="color:blue;">'.$key_n.'</b>',$title);
+                 
+                 $key_all = preg_split("/[\s,;]+/",$key_n);
+                 
                  foreach ($key_all as $key1) {
-                    $kq  =  str_replace(" ".$key1." ",'<b style="color:blue;">'." ".$key1." ".'</b>',$result);
-                    $kq  =  preg_replace('/'.$key1.'/','<b style="color:blue;">'." ".$key1." ".'</b>',$kq); 
+                    $kq  =  str_replace(" ".$key1." "," ".'<b style="color:blue;">'.$key1.'</b>'." ",$result);
+                    $kq  =  str_replace('</b>'.$key1.' '," ".'<b style="color:blue;">'.$key1.'</b>'." ",$kq); 
                     $result = $kq;
-                 } 
+                 }
                 echo $result ;
              @endphp
             </b>
-            <br><br>
+             <br><br>
             <p>Link:<a href="{{ $doc['Url'][0] }}" target="_blank">{{ $doc['Url'][0] }}</a></p>
             <br>
             <div style="height: 200px;overflow: auto;">
             <p>
                 @php
                     $results = $doc['Content'][0];
-                    $key_n = preg_replace('/[\:]/',"",$key);
-                    $results_kq = str_replace(" ".$key_n." ",'<b style="color:blue;">'." ".$key_n." ".'</b>',$results);
+                    $key_n = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
+
+                    $results_kq = str_replace($key_n,'<b style="color:blue;">'.$key_n.'</b>',$results);
+
                     $key_all = preg_split("/[\s,]+/",$key_n);
 
                     foreach($key_all as $key1){
-                        $content    = str_replace(" ".$key1." ",'<b style="color:blue;">'." ".$key1." ".'</b>',$results_kq);
-                        $results_kq = preg_replace('/'.$key1.'/','<b style="color:blue;">'." ".$key1." ".'</b>',$content);
+                        $content    = str_replace(" ".$key1." "," ".'<b style="color:blue;">'.$key1.'</b>'." ",$results_kq);
+                        $results_kq = str_replace('</b>'.$key1.' '," ".'<b style="color:blue;">'.$key1.'</b>'." ",$content); 
                     }
                     echo $results_kq;
                 @endphp
@@ -59,7 +63,6 @@
         </div>
         <hr>   
     @endforeach
-    {{--  <div style="text-aligin:center;">{!! $docs->links() !!}</div>  --}}
     <div style="text-align: center;">{!! $docs->links() !!}</div> 
 </div>
 @endsection

@@ -28,7 +28,7 @@ class BaseController extends Controller
 
         $key = $request->search;
 
-        $key_n = preg_replace('/[\:]/',"",$key);
+        $key_n = preg_replace('/[:?<>!@#$%^&*~]/',"",$key);
         $spell= $this->spell_check($key_n);
         
         if($spell != null){
@@ -39,16 +39,16 @@ class BaseController extends Controller
         
         $client = new Client(['base_uri' => 'http://127.0.0.1:8983/solr/base_index/']);
 
-        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=100');
+        $response_content   = $client->request('GET', 'select?df=Content&q='.$key_s.'&rows=20');
 
         $response_title     = $client->request('GET', 'select?df=Title&q='.$key_s.'&rows=100');
         $response_url       = $client->request('GET', 'select?df=Url&q='.$key_s.'&rows=100');
 
         // Lay phan noi dung theo cac truy van khac nhau
-        $content_content = $response_content->getBody();
+        $content_content    = $response_content->getBody();
 
-        $content_title = $response_title->getBody();
-        $content_url = $response_url->getBody();
+        $content_title      = $response_title->getBody();
+        $content_url        = $response_url->getBody();
         /*
             chu y: json_decode($json) ==> object(stdClass)
             con : json_decode($json,true) ==> array()

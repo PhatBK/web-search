@@ -1,1057 +1,148 @@
-2018-05-17 13:31:40.635 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-17 13:31:41.111 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-17 13:31:41.111 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-17 13:31:41.111 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-17 13:31:41.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-17T13:31:41.113118Z
-2018-05-17 13:31:41.126 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2018-05-17 13:31:41.191 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-17 13:31:41.197 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
-2018-05-17 13:31:42.022 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-17 13:31:42.023 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [vi_data, tong_hop, search]
-2018-05-17 13:31:42.029 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-05-17 13:31:42.165 INFO  (main) [   ] o.e.j.s.Server Started @2423ms
-2018-05-17 13:31:42.180 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-17 13:31:42.181 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-17 13:31:42.192 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-17 13:31:42.454 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-17 13:31:42.484 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-17 13:31:42.486 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-17 13:31:42.871 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
-2018-05-17 13:31:42.882 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
-2018-05-17 13:31:42.888 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema [search] Schema name=default-config
-2018-05-17 13:31:43.816 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-17 13:31:43.820 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-17 13:31:43.820 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-17 13:31:43.906 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
-2018-05-17 13:31:43.930 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
-2018-05-17 13:31:43.935 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
-2018-05-17 13:31:43.973 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-17 13:31:43.973 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-17 13:31:43.973 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-17 13:31:43.980 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
-2018-05-17 13:31:43.982 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
-2018-05-17 13:31:43.980 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
-2018-05-17 13:31:44.038 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-17 13:31:44.039 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-17 13:31:44.038 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-17 13:31:44.559 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-17 13:31:44.560 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-17 13:31:44.565 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-17 13:31:44.559 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-17 13:31:44.568 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-17 13:31:44.566 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-17 13:31:44.597 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-17 13:31:44.598 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-17 13:31:44.601 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-17 13:31:44.601 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-17 13:31:44.602 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-17 13:31:44.602 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-17 13:31:44.739 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@66cbfeeb[vi_data] main]
-2018-05-17 13:31:44.739 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.SolrIndexSearcher Opening [Searcher@39a5b996[tong_hop] main]
-2018-05-17 13:31:44.739 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.SolrIndexSearcher Opening [Searcher@8516316[search] main]
-2018-05-17 13:31:44.752 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
-2018-05-17 13:31:44.754 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
-2018-05-17 13:31:44.754 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
-2018-05-17 13:31:44.772 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-17 13:31:44.772 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-17 13:31:44.772 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-17 13:31:44.779 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-17 13:31:44.781 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-17 13:31:44.780 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-17 13:31:44.794 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-17 13:31:44.796 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-17 13:31:44.796 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-17 13:31:44.898 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@8516316[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-17 13:31:44.899 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-17 13:31:44.899 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-17 13:31:44.904 INFO  (searcherExecutor-7-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@39a5b996[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-17 13:31:44.904 INFO  (searcherExecutor-7-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-17 13:31:44.904 INFO  (searcherExecutor-7-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-17 13:31:44.903 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@66cbfeeb[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-17 13:31:44.910 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-17 13:31:44.910 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-17 13:31:44.913 INFO  (searcherExecutor-7-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@39a5b996[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-17 13:31:44.913 INFO  (searcherExecutor-8-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@8516316[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-17 13:31:44.915 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@66cbfeeb[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-17 13:31:47.156 ERROR (qtp580871917-15) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+2018-05-18 00:10:17.348 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-18 00:10:18.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-18 00:10:18.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-18 00:10:18.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-18 00:10:18.250 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-18T00:10:18.232629Z
+2018-05-18 00:10:18.251 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-18 00:10:18.437 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-18 00:10:18.492 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
+2018-05-18 00:10:30.364 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-18 00:10:30.366 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [vi_data, tong_hop, search]
+2018-05-18 00:10:30.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-18 00:10:31.615 INFO  (main) [   ] o.e.j.s.Server Started @16416ms
+2018-05-18 00:10:31.802 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-18 00:10:31.802 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-18 00:10:31.802 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-18 00:10:43.170 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-18 00:10:43.172 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-18 00:10:43.179 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-18 00:10:44.554 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema [search] Schema name=default-config
+2018-05-18 00:10:44.590 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
+2018-05-18 00:10:44.587 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
+2018-05-18 00:10:45.183 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
+2018-05-18 00:10:49.887 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-18 00:10:49.917 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
+2018-05-18 00:10:49.925 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-18 00:10:49.961 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-18 00:10:49.972 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
+2018-05-18 00:10:50.054 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
+2018-05-18 00:10:50.472 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-18 00:10:50.472 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-18 00:10:50.472 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-18 00:10:50.754 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
+2018-05-18 00:10:50.754 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
+2018-05-18 00:10:50.754 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
+2018-05-18 00:10:50.975 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-18 00:10:50.975 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-18 00:10:51.018 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-18 00:10:55.388 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-18 00:10:55.388 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-18 00:10:55.388 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-18 00:10:55.388 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-18 00:10:55.389 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-18 00:10:55.388 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-18 00:10:57.308 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-18 00:10:57.308 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-18 00:10:57.880 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-18 00:10:57.881 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-18 00:10:58.857 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-18 00:10:58.857 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-18 00:11:00.106 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.SolrIndexSearcher Opening [Searcher@152eeb47[tong_hop] main]
+2018-05-18 00:11:00.106 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.SolrIndexSearcher Opening [Searcher@6cd53301[search] main]
+2018-05-18 00:11:00.178 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
+2018-05-18 00:11:00.178 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
+2018-05-18 00:11:00.246 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@71182d3d[vi_data] main]
+2018-05-18 00:11:00.247 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
+2018-05-18 00:11:00.326 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-18 00:11:00.326 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-18 00:11:00.326 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-18 00:11:00.341 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-18 00:11:00.361 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-18 00:11:00.345 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-18 00:11:00.374 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-18 00:11:00.374 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-18 00:11:00.375 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-18 00:11:01.456 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@71182d3d[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-18 00:11:01.456 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-18 00:11:01.456 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-18 00:11:01.456 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6cd53301[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-18 00:11:01.457 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-18 00:11:01.457 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-18 00:11:01.458 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@152eeb47[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-18 00:11:01.458 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-18 00:11:01.458 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-18 00:11:01.461 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@71182d3d[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-18 00:11:01.462 INFO  (searcherExecutor-7-thread-1-processing-x:search) [   x:search] o.a.s.c.SolrCore [search] Registered new searcher Searcher@6cd53301[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-18 00:11:01.464 INFO  (searcherExecutor-9-thread-1-processing-x:tong_hop) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@152eeb47[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-18 00:11:01.727 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@6597e7c
+2018-05-18 00:11:01.727 INFO  (coreLoadExecutor-6-thread-3) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=106528380
+2018-05-18 00:11:01.733 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@6f84e3e
+2018-05-18 00:11:01.734 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=116936254
+2018-05-18 00:11:01.735 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@4dd2c62d
+2018-05-18 00:11:01.736 INFO  (coreLoadExecutor-6-thread-2) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=1305658925
+2018-05-18 00:11:01.969 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [vi_data]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:671)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
 	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:47.156 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=37
-2018-05-17 13:31:47.356 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14037 status=0 QTime=106
-2018-05-17 13:31:47.715 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=38
-2018-05-17 13:31:49.413 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} hits=14124 status=0 QTime=14
-2018-05-17 13:31:49.753 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Title&rows=100} hits=2583 status=0 QTime=20
-2018-05-17 13:31:49.944 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Url&rows=100} hits=3542 status=0 QTime=12
-2018-05-17 13:31:54.232 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} hits=14124 status=0 QTime=1
-2018-05-17 13:31:54.285 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Title&rows=100} hits=2583 status=0 QTime=1
-2018-05-17 13:31:54.319 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Url&rows=100} hits=3542 status=0 QTime=1
-2018-05-17 13:31:57.260 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14037 status=0 QTime=0
-2018-05-17 13:31:57.831 ERROR (qtp580871917-14) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [vi_data]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1053)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	... 5 more
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:871)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1047)
+	... 7 more
+2018-05-18 00:11:01.979 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [tong_hop]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:671)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
 	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:57.831 INFO  (qtp580871917-14) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:31:57.862 ERROR (qtp580871917-20) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [tong_hop]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1053)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	... 5 more
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:871)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1047)
+	... 7 more
+2018-05-18 00:11:01.981 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [search]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:671)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
 	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:57.863 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:31:58.118 ERROR (qtp580871917-21) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:58.119 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=2
-2018-05-17 13:31:58.672 ERROR (qtp580871917-13) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:58.673 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} status=400 QTime=1
-2018-05-17 13:31:58.705 ERROR (qtp580871917-19) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:31:58.706 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:16.723 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} hits=14124 status=0 QTime=1
-2018-05-17 13:32:16.769 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Title&rows=100} hits=2583 status=0 QTime=1
-2018-05-17 13:32:16.805 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Url&rows=100} hits=3542 status=0 QTime=1
-2018-05-17 13:32:18.020 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} hits=14124 status=0 QTime=1
-2018-05-17 13:32:18.052 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Title&rows=100} hits=2583 status=0 QTime=1
-2018-05-17 13:32:18.079 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Url&rows=100} hits=3542 status=0 QTime=1
-2018-05-17 13:32:20.704 ERROR (qtp580871917-21) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:32:20.705 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:20.713 ERROR (qtp580871917-13) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:32:20.714 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:20.932 ERROR (qtp580871917-15) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:32:20.932 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} status=400 QTime=1
-2018-05-17 13:32:20.979 ERROR (qtp580871917-20) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field 2018
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2018-05-17 13:32:20.979 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018:+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=2
-2018-05-17 13:32:26.601 INFO  (qtp580871917-14) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+\Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=0
-2018-05-17 13:32:26.861 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+\Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} hits=14124 status=0 QTime=0
-2018-05-17 13:32:26.898 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+\Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=1
-2018-05-17 13:32:26.906 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+\Lạc+quan+với+nhiều+gam+màu+sáng&df=Title&rows=100} hits=2583 status=0 QTime=2
-2018-05-17 13:32:26.930 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+\Lạc+quan+với+nhiều+gam+màu+sáng&df=Url&rows=100} hits=3542 status=0 QTime=0
-2018-05-17 13:32:33.009 INFO  (qtp580871917-17) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=0
-2018-05-17 13:32:35.909 ERROR (qtp580871917-15) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:35.910 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=2
-2018-05-17 13:32:36.111 ERROR (qtp580871917-21) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:36.111 INFO  (qtp580871917-21) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} status=400 QTime=1
-2018-05-17 13:32:36.168 ERROR (qtp580871917-13) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:36.168 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:41.265 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=0
-2018-05-17 13:32:41.616 ERROR (qtp580871917-14) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 /Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 65.  Encountered: <EOF> after : "/L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:41.616 INFO  (qtp580871917-14) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:42.501 ERROR (qtp580871917-15) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:42.502 INFO  (qtp580871917-15) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:42.816 ERROR (qtp580871917-19) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:42.816 INFO  (qtp580871917-19) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=100} status=400 QTime=0
-2018-05-17 13:32:42.852 ERROR (qtp580871917-13) [   x:vi_data] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Bức tranh kinh tế toàn cầu 2018 / Lạc quan với nhiều gam màu sáng': Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	... 34 more
-Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 66.  Encountered: <EOF> after : "/ L\u1ea1c quan v\u1edbi nhi\u1ec1u gam m\u00e0u s\u00e1ng"
-	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
-	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
-	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:586)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:142)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	... 37 more
-
-2018-05-17 13:32:42.852 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+/+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} status=400 QTime=1
-2018-05-17 13:32:48.889 INFO  (qtp580871917-20) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/select params={q=Bức+tranh+kinh+tế+toàn+cầu+2018+Lạc+quan+với+nhiều+gam+màu+sáng&df=Content&rows=5} hits=14124 status=0 QTime=0
-2018-05-17 13:34:29.872 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=1
-2018-05-17 13:34:30.004 INFO  (qtp580871917-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=130
-2018-05-17 13:34:30.003 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=131
-2018-05-17 13:34:32.871 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:34:32.877 INFO  (qtp580871917-41) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526564072854} status=0 QTime=2
-2018-05-17 13:34:32.887 INFO  (qtp580871917-18) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526564069675&ts=1526564069675} status=503 QTime=1
-2018-05-17 13:34:32.892 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/replication params={wt=json&command=details&_=1526564072854} status=0 QTime=7
-2018-05-17 13:34:32.902 INFO  (qtp580871917-43) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/system params={wt=json&_=1526564072854} status=0 QTime=14
-2018-05-17 13:34:32.908 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=32
-2018-05-17 13:34:35.422 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:34:35.431 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=9
-2018-05-17 13:34:35.437 INFO  (qtp580871917-13) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=7
-2018-05-17 13:34:53.674 INFO  (qtp580871917-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:34:53.677 INFO  (qtp580871917-41) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=1
-2018-05-17 13:34:53.691 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2018-05-17 13:34:53.703 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=27
-2018-05-17 13:34:53.772 INFO  (qtp580871917-22) [   x:vi_data] o.a.s.c.S.Request [vi_data]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Hôm+nay+tôi+đi+học&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=học&wt=json&_=1526564075410} status=0 QTime=81
-2018-05-17 13:35:08.357 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:35:08.364 INFO  (qtp580871917-42) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526564072854} status=0 QTime=0
-2018-05-17 13:35:08.372 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=8
-2018-05-17 13:35:08.377 INFO  (qtp580871917-17) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526564069675&ts=1526564069675} status=503 QTime=0
-2018-05-17 13:35:08.379 INFO  (qtp580871917-19) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/replication params={wt=json&command=details&_=1526564072854} status=0 QTime=5
-2018-05-17 13:35:08.405 INFO  (qtp580871917-21) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/system params={wt=json&_=1526564072854} status=0 QTime=33
-2018-05-17 13:35:09.757 INFO  (qtp580871917-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:35:09.771 INFO  (qtp580871917-41) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=2
-2018-05-17 13:35:09.773 INFO  (qtp580871917-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=14
-2018-05-17 13:35:25.248 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:35:25.253 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2018-05-17 13:35:25.254 INFO  (qtp580871917-14) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=2
-2018-05-17 13:35:25.256 INFO  (qtp580871917-13) [   x:tong_hop] o.a.s.c.S.Request [tong_hop]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Hôm+nay+tôi+đi+học&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=học&wt=json&_=1526564075410} status=0 QTime=3
-2018-05-17 13:35:25.266 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=16
-2018-05-17 13:36:20.631 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:36:20.635 INFO  (qtp580871917-43) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526564072854} status=0 QTime=1
-2018-05-17 13:36:20.639 INFO  (qtp580871917-22) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526564069675&ts=1526564069675} status=503 QTime=0
-2018-05-17 13:36:20.641 INFO  (qtp580871917-21) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/replication params={wt=json&command=details&_=1526564072854} status=0 QTime=6
-2018-05-17 13:36:20.647 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=15
-2018-05-17 13:36:20.655 INFO  (qtp580871917-15) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/system params={wt=json&_=1526564072854} status=0 QTime=17
-2018-05-17 13:36:22.084 INFO  (qtp580871917-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:36:22.095 INFO  (qtp580871917-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=10
-2018-05-17 13:36:22.101 INFO  (qtp580871917-18) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=2
-2018-05-17 13:36:36.225 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526564069675} status=0 QTime=0
-2018-05-17 13:36:36.230 INFO  (qtp580871917-41) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526564072854} status=0 QTime=1
-2018-05-17 13:36:36.236 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526564069675} status=0 QTime=8
-2018-05-17 13:36:36.238 INFO  (qtp580871917-43) [   x:search] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2018-05-17 13:36:36.240 INFO  (qtp580871917-43) [   x:search] o.a.s.c.S.Request [search]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=Hôm+nay+tôi+đi+học&analysis.fieldname=Origin&analysis.showmatch=true&verbose_output=1&analysis.query=học&wt=json&_=1526564075410} status=0 QTime=2
-2018-05-17 13:40:30.865 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
-2018-05-17 13:40:30.865 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2018-05-17 13:40:30.865 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2018-05-17 13:40:30.865 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2018-05-17 13:40:30.866 INFO  (coreCloseExecutor-22-thread-1) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@3443aeae
-2018-05-17 13:40:30.867 INFO  (coreCloseExecutor-22-thread-3) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@40d1ca75
-2018-05-17 13:40:30.866 INFO  (coreCloseExecutor-22-thread-2) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@6e31b183
-2018-05-17 13:40:30.867 INFO  (coreCloseExecutor-22-thread-1) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=876850862
-2018-05-17 13:40:30.872 INFO  (coreCloseExecutor-22-thread-3) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=1087490677
-2018-05-17 13:40:30.872 INFO  (coreCloseExecutor-22-thread-2) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=1848750467
+Caused by: org.apache.solr.common.SolrException: Unable to create core [search]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1053)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:642)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	... 5 more
+Caused by: java.lang.IllegalStateException: This CoreContainer has been closed
+	at org.apache.solr.core.CoreContainer.registerCore(CoreContainer.java:871)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1047)
+	... 7 more
+2018-05-18 00:11:01.982 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-05-18 00:11:01.983 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-05-18 00:11:01.983 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
