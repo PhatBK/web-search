@@ -34,7 +34,7 @@
              <br><br>
             <p>Link:<a href="{{ $doc['Url'][0] }}" target="_blank">{{ $doc['Url'][0] }}</a></p>
             <br>
-            <div style="height: 200px;overflow: auto;">
+            <div {{-- style="height: 600px;overflow: auto;" --}}>
             <p>
                 @php
                     $results = $doc['Content'][0];

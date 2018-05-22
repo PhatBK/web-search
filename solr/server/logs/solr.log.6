@@ -1,132 +1,178 @@
-2018-05-21 03:16:27.001 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-21 03:16:27.663 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-21 03:16:27.664 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-21 03:16:27.664 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-21 03:16:27.715 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-21T03:16:27.666505Z
-2018-05-21 03:16:27.716 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2018-05-21 03:16:27.853 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-21 03:16:27.890 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
-2018-05-21 03:16:29.943 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 5 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-21 03:16:29.944 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [vi_data_test, vi_data, base_index, tong_hop, search]
-2018-05-21 03:16:29.948 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-05-21 03:16:30.403 INFO  (main) [   ] o.e.j.s.Server Started @4911ms
-2018-05-21 03:16:30.407 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 03:16:30.409 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrResourceLoader [base_index] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 03:16:30.407 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrResourceLoader [vi_data_test] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 03:16:31.241 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 03:16:31.261 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 03:16:31.266 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 03:16:31.566 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
-2018-05-21 03:16:31.593 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.IndexSchema [vi_data_test] Schema name=default-config
-2018-05-21 03:16:31.612 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.IndexSchema [base_index] Schema name=default-config
-2018-05-21 03:16:32.684 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 03:16:32.693 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 03:16:32.744 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.CoreContainer Creating SolrCore 'base_index' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index, trusted=true
-2018-05-21 03:16:32.775 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.CoreContainer Creating SolrCore 'vi_data_test' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test, trusted=true
-2018-05-21 03:16:32.776 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 03:16:32.821 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
-2018-05-21 03:16:32.886 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 03:16:32.886 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 03:16:32.886 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 03:16:32.902 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
-2018-05-21 03:16:32.902 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore [[vi_data_test] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test/data/]
-2018-05-21 03:16:32.902 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.c.SolrCore [[base_index] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/data/]
-2018-05-21 03:16:32.979 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 03:16:32.979 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 03:16:32.980 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 03:16:33.605 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 03:16:33.605 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 03:16:33.605 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 03:16:33.605 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 03:16:33.606 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 03:16:33.607 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 03:16:33.620 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 03:16:33.620 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 03:16:33.637 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 03:16:33.638 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 03:16:33.648 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 03:16:33.648 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 03:16:33.807 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.SolrIndexSearcher Opening [Searcher@6d04c271[vi_data_test] main]
-2018-05-21 03:16:33.850 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data_test/conf
-2018-05-21 03:16:33.895 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 03:16:33.917 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 03:16:33.976 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 03:16:33.986 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.SolrIndexSearcher Opening [Searcher@8a4ffb9[base_index] main]
-2018-05-21 03:16:33.986 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@1f57e345[vi_data] main]
-2018-05-21 03:16:33.989 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
-2018-05-21 03:16:33.987 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/conf
-2018-05-21 03:16:33.997 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 03:16:33.994 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 03:16:33.998 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 03:16:34.000 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 03:16:33.997 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 03:16:34.002 INFO  (coreLoadExecutor-6-thread-3) [   x:base_index] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 03:16:34.107 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6d04c271[vi_data_test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-05-21 03:16:34.108 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 03:16:34.108 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 03:16:34.113 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1f57e345[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 03:16:34.113 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 03:16:34.113 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 03:16:34.117 INFO  (searcherExecutor-8-thread-1-processing-x:vi_data_test) [   x:vi_data_test] o.a.s.c.SolrCore [vi_data_test] Registered new searcher Searcher@6d04c271[vi_data_test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-05-21 03:16:34.118 INFO  (searcherExecutor-9-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@1f57e345[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 03:16:34.119 INFO  (searcherExecutor-7-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@8a4ffb9[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 03:16:34.119 INFO  (searcherExecutor-7-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 03:16:34.119 INFO  (searcherExecutor-7-thread-1-processing-x:base_index) [   x:base_index] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 03:16:34.120 INFO  (searcherExecutor-7-thread-1-processing-x:base_index) [   x:base_index] o.a.s.c.SolrCore [base_index] Registered new searcher Searcher@8a4ffb9[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 03:16:34.131 INFO  (coreLoadExecutor-6-thread-1) [   x:vi_data_test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1601041957263507456
-2018-05-21 03:16:34.208 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 03:16:34.219 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 03:16:34.253 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 03:16:34.261 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 03:16:34.337 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
-2018-05-21 03:16:34.361 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
-2018-05-21 03:16:34.634 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 03:16:34.648 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 03:16:34.679 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
-2018-05-21 03:16:34.680 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 03:16:34.680 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
-2018-05-21 03:16:34.685 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
-2018-05-21 03:16:34.685 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 03:16:34.686 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
-2018-05-21 03:16:34.687 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 03:16:34.697 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 03:16:34.745 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 03:16:34.746 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 03:16:34.752 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 03:16:34.752 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 03:16:34.765 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 03:16:34.766 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 03:16:34.778 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 03:16:34.779 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 03:16:34.834 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7ebd2c17[search] main]
-2018-05-21 03:16:34.835 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
-2018-05-21 03:16:34.835 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 03:16:34.835 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 03:16:34.837 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 03:16:34.847 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7ebd2c17[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-21 03:16:34.847 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 03:16:34.847 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 03:16:34.848 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@7ebd2c17[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-21 03:16:34.849 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@449c43b6[tong_hop] main]
-2018-05-21 03:16:34.850 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
-2018-05-21 03:16:34.851 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 03:16:34.851 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 03:16:34.852 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 03:16:34.853 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@449c43b6[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-21 03:16:34.853 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 03:16:34.853 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 03:16:34.854 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@449c43b6[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-21 03:16:44.626 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
-2018-05-21 03:16:44.627 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2018-05-21 03:16:44.627 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2018-05-21 03:16:44.628 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2018-05-21 03:16:44.633 INFO  (coreCloseExecutor-32-thread-1) [   x:vi_data_test] o.a.s.c.SolrCore [vi_data_test]  CLOSING SolrCore org.apache.solr.core.SolrCore@3536a732
-2018-05-21 03:16:44.634 INFO  (coreCloseExecutor-32-thread-1) [   x:vi_data_test] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data_test, tag=892774194
-2018-05-21 03:16:44.634 INFO  (coreCloseExecutor-32-thread-2) [   x:base_index] o.a.s.c.SolrCore [base_index]  CLOSING SolrCore org.apache.solr.core.SolrCore@4ba74ad6
-2018-05-21 03:16:44.635 INFO  (coreCloseExecutor-32-thread-2) [   x:base_index] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.base_index, tag=1269254870
-2018-05-21 03:16:44.636 INFO  (coreCloseExecutor-32-thread-3) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@603d665
-2018-05-21 03:16:44.636 INFO  (coreCloseExecutor-32-thread-3) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=100914789
-2018-05-21 03:16:44.645 INFO  (coreCloseExecutor-32-thread-4) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@11c63892
-2018-05-21 03:16:44.645 INFO  (coreCloseExecutor-32-thread-4) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=298203282
-2018-05-21 03:16:44.650 INFO  (coreCloseExecutor-32-thread-5) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@d8488d1
-2018-05-21 03:16:44.654 INFO  (coreCloseExecutor-32-thread-5) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=226789585
+2018-05-21 07:50:39.595 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-21 07:50:40.025 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-21 07:50:40.039 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-21T07:50:40.028370Z
+2018-05-21 07:50:40.040 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-21 07:50:40.107 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 07:50:40.117 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
+2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 7 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [index_khong_dau, vi_data, index_base, base_index, index_filter, tong_hop, search]
+2018-05-21 07:50:40.823 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-21 07:50:40.946 INFO  (main) [   ] o.e.j.s.Server Started @2190ms
+2018-05-21 07:50:40.967 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrResourceLoader [index_khong_dau] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrResourceLoader [index_base] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:41.207 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.320 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.325 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:41.538 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema [index_khong_dau] Schema name=default-config
+2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
+2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema [index_base] Schema name=default-config
+2018-05-21 07:50:42.460 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.463 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.467 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:42.525 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.CoreContainer Creating SolrCore 'index_khong_dau' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau, trusted=true
+2018-05-21 07:50:42.547 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.CoreContainer Creating SolrCore 'index_base' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base, trusted=true
+2018-05-21 07:50:42.566 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore [[index_base] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/data/]
+2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
+2018-05-21 07:50:42.600 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore [[index_khong_dau] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/data/]
+2018-05-21 07:50:42.643 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:42.644 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:42.645 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.256 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.259 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.265 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:43.266 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.SolrIndexSearcher Opening [Searcher@63f4374b[index_khong_dau] main]
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.SolrIndexSearcher Opening [Searcher@16d66ca2[index_base] main]
+2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c01d24a[vi_data] main]
+2018-05-21 07:50:43.406 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
+2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/conf
+2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/conf
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:43.433 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.438 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.452 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.455 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:43.457 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.458 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.533 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.535 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.540 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.SolrCore [index_base] Registered new searcher Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.542 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau] Registered new searcher Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:43.615 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [base_index] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.628 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [index_filter] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.637 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:43.652 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.658 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.748 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:43.755 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [base_index] Schema name=default-config
+2018-05-21 07:50:43.779 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [index_filter] Schema name=default-config
+2018-05-21 07:50:43.845 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
+2018-05-21 07:50:44.213 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.230 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.240 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'base_index' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index, trusted=true
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[base_index] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/data/]
+2018-05-21 07:50:44.272 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
+2018-05-21 07:50:44.294 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.298 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'index_filter' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter, trusted=true
+2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[index_filter] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/data/]
+2018-05-21 07:50:44.311 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@50f9d591[base_index] main]
+2018-05-21 07:50:44.382 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/conf
+2018-05-21 07:50:44.383 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.384 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.386 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.393 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [base_index] Registered new searcher Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7bbcf729[tong_hop] main]
+2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
+2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.400 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 07:50:44.402 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6439b6f1[index_filter] main]
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/conf
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.407 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.409 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.SolrCore [index_filter] Registered new searcher Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
+2018-05-21 07:50:44.435 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 07:50:44.518 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 07:50:44.560 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
+2018-05-21 07:50:44.775 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 07:50:44.814 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
+2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
+2018-05-21 07:50:44.820 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 07:50:44.870 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a99c7e8[search] main]
+2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
+2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 07:50:44.873 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 07:50:44.874 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 07:50:44.938 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 07:51:45.568 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=đại+học+bách+khoa&df=Content&rows=20} hits=4654 status=0 QTime=73
+2018-05-21 07:52:35.386 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@6946652
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.c.SolrCore [index_base]  CLOSING SolrCore org.apache.solr.core.SolrCore@3c1c1b76
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=110388818
+2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_base, tag=1008474998
+2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau]  CLOSING SolrCore org.apache.solr.core.SolrCore@39881507
+2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_khong_dau, tag=965219591
+2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b28f7ac
+2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=1797846956
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.c.SolrCore [index_filter]  CLOSING SolrCore org.apache.solr.core.SolrCore@177fa1f0
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_filter, tag=394240496
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.c.SolrCore [base_index]  CLOSING SolrCore org.apache.solr.core.SolrCore@68fbb6d7
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.base_index, tag=1761326807
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@21c3392d
+2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=566442285

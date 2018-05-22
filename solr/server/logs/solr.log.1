@@ -1,178 +1,404 @@
-2018-05-21 07:50:39.595 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
-2018-05-21 07:50:40.025 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
-2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-05-21 07:50:40.026 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
-2018-05-21 07:50:40.039 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-21T07:50:40.028370Z
-2018-05-21 07:50:40.040 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2018-05-21 07:50:40.107 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-21 07:50:40.117 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
-2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 7 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
-2018-05-21 07:50:40.818 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [index_khong_dau, vi_data, index_base, base_index, index_filter, tong_hop, search]
-2018-05-21 07:50:40.823 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-05-21 07:50:40.946 INFO  (main) [   ] o.e.j.s.Server Started @2190ms
-2018-05-21 07:50:40.967 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrResourceLoader [index_khong_dau] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:40.968 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrResourceLoader [index_base] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:41.207 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:41.320 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:41.325 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:41.538 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema [index_khong_dau] Schema name=default-config
-2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
-2018-05-21 07:50:41.553 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema [index_base] Schema name=default-config
-2018-05-21 07:50:42.460 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:42.463 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:42.467 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:42.525 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.CoreContainer Creating SolrCore 'index_khong_dau' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau, trusted=true
-2018-05-21 07:50:42.547 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.CoreContainer Creating SolrCore 'index_base' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base, trusted=true
-2018-05-21 07:50:42.566 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
-2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:42.589 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore [[index_base] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/data/]
-2018-05-21 07:50:42.597 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
-2018-05-21 07:50:42.600 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore [[index_khong_dau] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/data/]
-2018-05-21 07:50:42.643 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:42.644 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:42.645 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:43.229 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:43.232 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:43.252 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:43.256 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:43.259 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:43.265 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:43.266 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.SolrIndexSearcher Opening [Searcher@63f4374b[index_khong_dau] main]
-2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.SolrIndexSearcher Opening [Searcher@16d66ca2[index_base] main]
-2018-05-21 07:50:43.393 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c01d24a[vi_data] main]
-2018-05-21 07:50:43.406 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
-2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/conf
-2018-05-21 07:50:43.407 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/conf
-2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:43.422 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:43.433 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:43.438 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:43.452 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:43.455 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:43.457 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:43.458 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:43.532 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:43.533 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:43.535 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:43.536 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:43.540 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.SolrCore [index_base] Registered new searcher Searcher@16d66ca2[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:43.542 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@1c01d24a[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:43.554 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:43.555 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau] Registered new searcher Searcher@63f4374b[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:43.615 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [base_index] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:43.628 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [index_filter] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:43.637 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:43.652 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:43.658 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:43.748 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:43.755 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [base_index] Schema name=default-config
-2018-05-21 07:50:43.779 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [index_filter] Schema name=default-config
-2018-05-21 07:50:43.845 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
-2018-05-21 07:50:44.213 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:44.230 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:44.240 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'base_index' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index, trusted=true
-2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:44.269 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[base_index] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/data/]
-2018-05-21 07:50:44.272 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
-2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:44.292 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
-2018-05-21 07:50:44.294 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:44.298 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'index_filter' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter, trusted=true
-2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:44.299 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[index_filter] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/data/]
-2018-05-21 07:50:44.311 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:44.368 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:44.370 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:44.374 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:44.377 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:44.379 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:44.376 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@50f9d591[base_index] main]
-2018-05-21 07:50:44.382 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/base_index/conf
-2018-05-21 07:50:44.383 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:44.384 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:44.386 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:44.387 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:44.393 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [base_index] Registered new searcher Searcher@50f9d591[base_index] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
-2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7bbcf729[tong_hop] main]
-2018-05-21 07:50:44.397 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
-2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:44.398 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:44.400 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:44.401 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@7bbcf729[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
-2018-05-21 07:50:44.402 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6439b6f1[index_filter] main]
-2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/conf
-2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:44.404 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:44.407 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:44.408 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:44.409 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.SolrCore [index_filter] Registered new searcher Searcher@6439b6f1[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C10364)))}
-2018-05-21 07:50:44.435 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
-2018-05-21 07:50:44.518 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
-2018-05-21 07:50:44.560 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
-2018-05-21 07:50:44.775 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-05-21 07:50:44.814 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
-2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2018-05-21 07:50:44.815 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
-2018-05-21 07:50:44.820 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-05-21 07:50:44.864 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2018-05-21 07:50:44.865 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-05-21 07:50:44.870 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a99c7e8[search] main]
-2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
-2018-05-21 07:50:44.872 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-05-21 07:50:44.873 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-05-21 07:50:44.874 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-05-21 07:50:44.937 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-05-21 07:50:44.938 INFO  (searcherExecutor-37-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@5a99c7e8[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
-2018-05-21 07:51:45.568 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=đại+học+bách+khoa&df=Content&rows=20} hits=4654 status=0 QTime=73
-2018-05-21 07:52:35.386 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1543518287
-2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2018-05-21 07:52:35.387 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.c.SolrCore [vi_data]  CLOSING SolrCore org.apache.solr.core.SolrCore@6946652
-2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.c.SolrCore [index_base]  CLOSING SolrCore org.apache.solr.core.SolrCore@3c1c1b76
-2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-1) [   x:vi_data] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.vi_data, tag=110388818
-2018-05-21 07:52:35.391 INFO  (coreCloseExecutor-42-thread-2) [   x:index_base] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_base, tag=1008474998
-2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau]  CLOSING SolrCore org.apache.solr.core.SolrCore@39881507
-2018-05-21 07:52:35.392 INFO  (coreCloseExecutor-42-thread-3) [   x:index_khong_dau] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_khong_dau, tag=965219591
-2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.c.SolrCore [tong_hop]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b28f7ac
-2018-05-21 07:52:35.393 INFO  (coreCloseExecutor-42-thread-4) [   x:tong_hop] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tong_hop, tag=1797846956
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.c.SolrCore [index_filter]  CLOSING SolrCore org.apache.solr.core.SolrCore@177fa1f0
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-5) [   x:index_filter] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.index_filter, tag=394240496
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.c.SolrCore [base_index]  CLOSING SolrCore org.apache.solr.core.SolrCore@68fbb6d7
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-6) [   x:base_index] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.base_index, tag=1761326807
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.c.SolrCore [search]  CLOSING SolrCore org.apache.solr.core.SolrCore@21c3392d
-2018-05-21 07:52:35.394 INFO  (coreCloseExecutor-42-thread-7) [   x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search, tag=566442285
+2018-05-21 13:29:20.224 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-05-21 13:29:20.629 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.1
+2018-05-21 13:29:20.629 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-05-21 13:29:20.629 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tesla-phatnh/Documents/search_review/solr
+2018-05-21 13:29:20.646 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-05-21T13:29:20.631991Z
+2018-05-21 13:29:20.647 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-05-21 13:29:20.710 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 13:29:20.718 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tesla-phatnh/Documents/search_review/solr/server/solr/solr.xml
+2018-05-21 13:29:21.430 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 6 core definitions underneath /home/tesla-phatnh/Documents/search_review/solr/server/solr
+2018-05-21 13:29:21.431 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [index_khong_dau, vi_data, index_base, index_filter, tong_hop, search]
+2018-05-21 13:29:21.435 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-05-21 13:29:21.589 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrResourceLoader [vi_data] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:21.603 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrResourceLoader [index_base] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:21.607 INFO  (main) [   ] o.e.j.s.Server Started @2312ms
+2018-05-21 13:29:21.610 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrResourceLoader [index_khong_dau] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:21.916 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:21.961 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:21.970 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:22.224 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema [vi_data] Schema name=default-config
+2018-05-21 13:29:22.258 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema [index_khong_dau] Schema name=default-config
+2018-05-21 13:29:22.262 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema [index_base] Schema name=default-config
+2018-05-21 13:29:23.187 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:23.196 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:23.198 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:23.250 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.CoreContainer Creating SolrCore 'index_khong_dau' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau, trusted=true
+2018-05-21 13:29:23.275 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.CoreContainer Creating SolrCore 'index_base' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base, trusted=true
+2018-05-21 13:29:23.278 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.CoreContainer Creating SolrCore 'vi_data' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data, trusted=true
+2018-05-21 13:29:23.311 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:23.311 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:23.311 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:23.318 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.c.SolrCore [[index_khong_dau] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/data/]
+2018-05-21 13:29:23.318 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.c.SolrCore [[index_base] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/data/]
+2018-05-21 13:29:23.320 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.c.SolrCore [[vi_data] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/data/]
+2018-05-21 13:29:23.365 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:23.365 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:23.370 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:23.929 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:23.930 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:23.930 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:23.929 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:23.930 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:23.937 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:23.944 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:23.945 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:23.952 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:23.953 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:23.959 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:23.959 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:24.046 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.SolrIndexSearcher Opening [Searcher@160c33c5[index_khong_dau] main]
+2018-05-21 13:29:24.111 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_khong_dau/conf
+2018-05-21 13:29:24.123 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.SolrIndexSearcher Opening [Searcher@23546e91[vi_data] main]
+2018-05-21 13:29:24.123 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.SolrIndexSearcher Opening [Searcher@1f18b487[index_base] main]
+2018-05-21 13:29:24.124 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/vi_data/conf
+2018-05-21 13:29:24.127 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_base/conf
+2018-05-21 13:29:24.135 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:24.135 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:24.135 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:24.142 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:24.146 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:24.145 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:24.158 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:24.159 INFO  (coreLoadExecutor-6-thread-3) [   x:index_base] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:24.160 INFO  (coreLoadExecutor-6-thread-2) [   x:vi_data] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:24.220 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1f18b487[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:29:24.220 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:24.221 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:24.222 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@160c33c5[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-21 13:29:24.222 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:24.222 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:24.224 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@23546e91[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 13:29:24.224 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:24.224 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:24.226 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau] Registered new searcher Searcher@160c33c5[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-21 13:29:24.226 INFO  (searcherExecutor-7-thread-1-processing-x:vi_data) [   x:vi_data] o.a.s.c.SolrCore [vi_data] Registered new searcher Searcher@23546e91[vi_data] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C14802)))}
+2018-05-21 13:29:24.229 INFO  (searcherExecutor-8-thread-1-processing-x:index_base) [   x:index_base] o.a.s.c.SolrCore [index_base] Registered new searcher Searcher@1f18b487[index_base] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:29:24.230 INFO  (coreLoadExecutor-6-thread-1) [   x:index_khong_dau] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1601080513506836480
+2018-05-21 13:29:24.281 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [index_filter] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:24.281 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [tong_hop] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:24.301 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [search] Added 53 libs to classloader, from paths: [/home/tesla-phatnh/Documents/search_review/solr/contrib/clustering/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/extraction/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/langid/lib, /home/tesla-phatnh/Documents/search_review/solr/contrib/velocity/lib, /home/tesla-phatnh/Documents/search_review/solr/dist]
+2018-05-21 13:29:24.313 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:24.345 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:24.349 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.1
+2018-05-21 13:29:24.403 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [tong_hop] Schema name=default-config
+2018-05-21 13:29:24.461 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [search] Schema name=default-config
+2018-05-21 13:29:24.469 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [index_filter] Schema name=default-config
+2018-05-21 13:29:24.891 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:24.891 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:24.949 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-05-21 13:29:24.964 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tong_hop' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop, trusted=true
+2018-05-21 13:29:24.964 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:24.964 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[tong_hop] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/data/]
+2018-05-21 13:29:24.976 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/search, trusted=true
+2018-05-21 13:29:24.976 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:24.976 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[search] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/search], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/search/data/]
+2018-05-21 13:29:24.985 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'index_filter' using configuration from instancedir /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter, trusted=true
+2018-05-21 13:29:24.985 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-05-21 13:29:24.985 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[index_filter] ] Opening new SolrCore at [/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter], dataDir=[/home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/data/]
+2018-05-21 13:29:24.986 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:24.994 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:25.007 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-05-21 13:29:25.060 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:25.060 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:25.061 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:25.061 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:25.063 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@579b59b8[index_filter] main]
+2018-05-21 13:29:25.064 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/index_filter/conf
+2018-05-21 13:29:25.064 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:25.064 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:25.066 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:25.066 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1601080514383446016
+2018-05-21 13:29:25.069 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@579b59b8[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-21 13:29:25.069 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:25.069 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:25.070 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.SolrCore [index_filter] Registered new searcher Searcher@579b59b8[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-05-21 13:29:25.072 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:25.072 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:25.074 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:25.074 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:25.081 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6e8ef7c2[search] main]
+2018-05-21 13:29:25.081 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/search/conf
+2018-05-21 13:29:25.082 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:25.082 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:25.084 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:25.094 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6e8ef7c2[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 13:29:25.095 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:25.095 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:25.095 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-05-21 13:29:25.095 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-05-21 13:29:25.096 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-05-21 13:29:25.097 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-05-21 13:29:25.098 INFO  (searcherExecutor-23-thread-1) [   ] o.a.s.c.SolrCore [search] Registered new searcher Searcher@6e8ef7c2[search] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C2040)))}
+2018-05-21 13:29:25.104 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@21337e80[tong_hop] main]
+2018-05-21 13:29:25.105 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/tesla-phatnh/Documents/search_review/solr/server/solr/tong_hop/conf
+2018-05-21 13:29:25.106 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-05-21 13:29:25.106 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-05-21 13:29:25.107 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-05-21 13:29:25.108 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@21337e80[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 13:29:25.108 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:29:25.108 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-05-21 13:29:25.108 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [tong_hop] Registered new searcher Searcher@21337e80[tong_hop] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.2.1):C14802)))}
+2018-05-21 13:31:25.116 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.u.p.LogUpdateProcessorFactory [index_khong_dau]  webapp=/solr path=/update/json/docs params={}{add=[85801e2e-6993-4853-bd83-b4e94444bbf1 (1601080635085029376), e6fe3801-17f3-43e2-a57a-0720c6772a08 (1601080635153186816), 2efb069e-00f0-46fd-a242-21038086d352 (1601080635161575424), 175ab3db-c48a-43c3-8ebe-6c278569bd38 (1601080635166818304), 082155da-eec2-4434-8689-3aebf4259c3f (1601080635172061184), c8a63dd9-1940-4b1f-bfcd-25e36de7b8f2 (1601080635175206912), 3cfd4070-bf81-4faa-a660-ee844bef755d (1601080635193032704), 55e1f1a2-1b09-4093-a7fa-343b5511d000 (1601080635200372736), e4784a34-95c6-4a5a-91f7-e50e56265c65 (1601080635207712768), 757d6740-abd7-41ff-bde8-4949c8cf6ada (1601080635210858496), ... (7752 adds)]} 0 4983
+2018-05-21 13:31:25.133 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1601080640282820608,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-05-21 13:31:25.134 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4002ef73 commitCommandVersion:1601080640282820608
+2018-05-21 13:31:27.557 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.s.SolrIndexSearcher Opening [Searcher@58d74e5[index_khong_dau] main]
+2018-05-21 13:31:27.561 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-05-21 13:31:27.562 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58d74e5[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:31:27.562 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:31:27.562 INFO  (searcherExecutor-9-thread-1-processing-x:index_khong_dau) [   x:index_khong_dau] o.a.s.c.SolrCore [index_khong_dau] Registered new searcher Searcher@58d74e5[index_khong_dau] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:31:27.563 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.u.p.LogUpdateProcessorFactory [index_khong_dau]  webapp=/solr path=/update params={commit=true}{commit=} 0 2430
+2018-05-21 13:31:55.859 INFO  (qtp580871917-17) [   x:index_filter] o.a.s.u.p.LogUpdateProcessorFactory [index_filter]  webapp=/solr path=/update/json/docs params={}{add=[a326b9fe-a757-41b3-b5fe-506156b26dca (1601080667303575552), 40754b8b-570b-4ad5-bc25-34fd8dc35b19 (1601080667325595648), f9dfbfcb-cb8b-4921-bd3e-71d0e54a5ed8 (1601080667329789952), c793f7c1-f160-4cf0-83ac-1c746b4b7be0 (1601080667333984256), 10dbadc3-22a2-47ee-b8ea-558249eddf13 (1601080667336081408), 93ddc969-718b-49a9-8d8c-cc84926f8f0b (1601080667338178560), 129f96af-c2e8-4a0f-93dd-dff6abad5ebe (1601080667340275712), ca185b6a-f3a3-4b59-95bc-634ef91cd508 (1601080667343421440), dc073323-7a41-40a8-ab37-4eb9b5486abd (1601080667346567168), c5e252f4-845c-4e80-b21d-3580ccf60ad7 (1601080667347615744), ... (7752 adds)]} 0 4957
+2018-05-21 13:31:55.864 INFO  (qtp580871917-21) [   x:index_filter] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1601080672506609664,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-05-21 13:31:55.864 INFO  (qtp580871917-21) [   x:index_filter] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@59a9d8b4 commitCommandVersion:1601080672506609664
+2018-05-21 13:31:57.625 INFO  (qtp580871917-21) [   x:index_filter] o.a.s.s.SolrIndexSearcher Opening [Searcher@131ed13d[index_filter] main]
+2018-05-21 13:31:57.627 INFO  (qtp580871917-21) [   x:index_filter] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-05-21 13:31:57.627 INFO  (searcherExecutor-24-thread-1-processing-x:index_filter) [   x:index_filter] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@131ed13d[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:31:57.627 INFO  (searcherExecutor-24-thread-1-processing-x:index_filter) [   x:index_filter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-05-21 13:31:57.627 INFO  (searcherExecutor-24-thread-1-processing-x:index_filter) [   x:index_filter] o.a.s.c.SolrCore [index_filter] Registered new searcher Searcher@131ed13d[index_filter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.1):C7752)))}
+2018-05-21 13:31:57.627 INFO  (qtp580871917-21) [   x:index_filter] o.a.s.u.p.LogUpdateProcessorFactory [index_filter]  webapp=/solr path=/update params={commit=true}{commit=} 0 1764
+2018-05-21 13:32:18.903 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=2
+2018-05-21 13:32:18.958 INFO  (qtp580871917-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=54
+2018-05-21 13:32:18.990 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=19
+2018-05-21 13:32:22.680 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:32:22.688 INFO  (qtp580871917-20) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/replication params={wt=json&command=details&_=1526909542674} status=0 QTime=3
+2018-05-21 13:32:22.691 INFO  (qtp580871917-22) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526909542674} status=0 QTime=6
+2018-05-21 13:32:22.700 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=19
+2018-05-21 13:32:22.705 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526909538542&ts=1526909538542} status=503 QTime=2
+2018-05-21 13:32:22.728 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/admin/system params={wt=json&_=1526909542674} status=0 QTime=39
+2018-05-21 13:32:23.552 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:32:23.565 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=6
+2018-05-21 13:32:23.593 INFO  (qtp580871917-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=41
+2018-05-21 13:32:43.510 INFO  (qtp580871917-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:32:43.520 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=2
+2018-05-21 13:32:43.526 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2018-05-21 13:32:43.530 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=19
+2018-05-21 13:32:43.591 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=hà+nội+đẹp+nhất+về+đêm&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=đêm+hà+nội&wt=json&_=1526909543545} status=0 QTime=64
+2018-05-21 13:32:55.497 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:32:55.505 INFO  (qtp580871917-18) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526909542674} status=0 QTime=0
+2018-05-21 13:32:55.506 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=8
+2018-05-21 13:32:55.507 INFO  (qtp580871917-20) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/replication params={wt=json&command=details&_=1526909542674} status=0 QTime=1
+2018-05-21 13:32:55.515 INFO  (qtp580871917-17) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526909538542&ts=1526909538542} status=503 QTime=0
+2018-05-21 13:32:55.548 INFO  (qtp580871917-13) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/admin/system params={wt=json&_=1526909542674} status=0 QTime=35
+2018-05-21 13:32:57.327 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:32:57.333 INFO  (qtp580871917-16) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=1
+2018-05-21 13:32:57.336 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=11
+2018-05-21 13:33:11.251 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:33:11.256 INFO  (qtp580871917-20) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=1
+2018-05-21 13:33:11.265 INFO  (qtp580871917-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=10
+2018-05-21 13:33:11.267 INFO  (qtp580871917-13) [   x:index_filter] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2018-05-21 13:33:11.270 INFO  (qtp580871917-13) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=hà+nội+đẹp+nhất+khi+nào&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=hà+nội&wt=json&_=1526909543545} status=0 QTime=3
+2018-05-21 13:33:31.918 INFO  (qtp580871917-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:33:31.926 INFO  (qtp580871917-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=7
+2018-05-21 13:33:31.928 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1526909542674} status=0 QTime=0
+2018-05-21 13:33:31.932 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/replication params={wt=json&command=details&_=1526909542674} status=0 QTime=0
+2018-05-21 13:33:31.943 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1526909538542&ts=1526909538542} status=503 QTime=0
+2018-05-21 13:33:31.947 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/admin/system params={wt=json&_=1526909542674} status=0 QTime=15
+2018-05-21 13:33:33.676 INFO  (qtp580871917-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:33:33.683 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=2
+2018-05-21 13:33:33.693 INFO  (qtp580871917-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=14
+2018-05-21 13:33:48.028 INFO  (qtp580871917-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1526909538539} status=0 QTime=0
+2018-05-21 13:33:48.039 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1526909542674} status=0 QTime=1
+2018-05-21 13:33:48.043 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2018-05-21 13:33:48.047 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=hà+nội+đẹp+nhất+khi+nào&analysis.fieldname=Content&analysis.showmatch=true&verbose_output=1&analysis.query=khi+nào&wt=json&_=1526909543545} status=0 QTime=4
+2018-05-21 13:33:48.056 INFO  (qtp580871917-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1526909538542} status=0 QTime=23
+2018-05-21 13:34:22.431 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=h&df=Content&rows=5} hits=176 status=0 QTime=30
+2018-05-21 13:34:22.649 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=ho&df=Content&rows=5} hits=4366 status=0 QTime=6
+2018-05-21 13:34:23.106 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=h&df=Content&rows=5} hits=176 status=0 QTime=0
+2018-05-21 13:34:23.273 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-21 13:34:23.438 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=&df=Content&rows=5} hits=0 status=0 QTime=0
+2018-05-21 13:34:25.102 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=h&df=Content&rows=5} hits=176 status=0 QTime=0
+2018-05-21 13:34:25.314 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=ho&df=Content&rows=5} hits=4366 status=0 QTime=1
+2018-05-21 13:34:25.489 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=hoa&df=Content&rows=5} hits=3053 status=0 QTime=2
+2018-05-21 13:34:25.732 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=hỏa&df=Content&rows=5} hits=3053 status=0 QTime=0
+2018-05-21 13:34:26.873 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=hỏa&df=Content&rows=20} hits=3053 status=0 QTime=1
+2018-05-21 13:34:26.907 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=hỏa&df=Content&rows=5} hits=3053 status=0 QTime=0
+2018-05-21 13:45:57.845 INFO  (qtp580871917-20) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4269 status=0 QTime=14
+2018-05-21 13:53:42.373 INFO  (qtp580871917-13) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Tỉnh+có+phải+là+thằng+ngáo+đá&df=Content&rows=20} hits=7528 status=0 QTime=15
+2018-05-21 13:54:41.400 INFO  (qtp580871917-18) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4269 status=0 QTime=1
+2018-05-21 13:58:45.601 INFO  (qtp580871917-22) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điêm+thi+dai+hoc&df=Content&rows=20} hits=2419 status=0 QTime=4
+2018-05-21 13:59:18.669 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điêm+thi+dai+hoc&df=Content&rows=20} hits=2419 status=0 QTime=0
+2018-05-21 14:06:31.142 INFO  (qtp580871917-17) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Dự+đoán+điểm+thi+đại+học+năm+2018&df=Content&rows=20} hits=7043 status=0 QTime=7
+2018-05-21 14:09:00.987 INFO  (qtp580871917-13) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điêm+thi+dai+hoc&df=Content&rows=20} hits=2419 status=0 QTime=0
+2018-05-21 14:09:06.050 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điêm+thi+dai+hoc&df=Content&rows=20} hits=2419 status=0 QTime=0
+2018-05-21 14:09:30.141 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=d&df=Content&rows=5} hits=168 status=0 QTime=1
+2018-05-21 14:09:30.313 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=di&df=Content&rows=5} hits=3692 status=0 QTime=1
+2018-05-21 14:09:30.581 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=die&df=Content&rows=5} hits=8 status=0 QTime=0
+2018-05-21 14:09:30.807 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem&df=Content&rows=5} hits=3689 status=0 QTime=1
+2018-05-21 14:09:30.884 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem&df=Content&rows=5} hits=3689 status=0 QTime=0
+2018-05-21 14:09:31.112 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+t&df=Content&rows=5} hits=3736 status=0 QTime=2
+2018-05-21 14:09:31.341 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+th&df=Content&rows=5} hits=3693 status=0 QTime=2
+2018-05-21 14:09:31.567 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi&df=Content&rows=5} hits=6041 status=0 QTime=2
+2018-05-21 14:09:31.716 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi&df=Content&rows=5} hits=6041 status=0 QTime=0
+2018-05-21 14:09:31.974 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+d&df=Content&rows=5} hits=6061 status=0 QTime=2
+2018-05-21 14:09:32.086 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+da&df=Content&rows=5} hits=7503 status=0 QTime=4
+2018-05-21 14:09:32.346 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai&df=Content&rows=5} hits=6696 status=0 QTime=3
+2018-05-21 14:09:32.502 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai&df=Content&rows=5} hits=6696 status=0 QTime=0
+2018-05-21 14:09:32.786 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai+h&df=Content&rows=5} hits=6717 status=0 QTime=3
+2018-05-21 14:09:33.125 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai+ho&df=Content&rows=5} hits=7105 status=0 QTime=3
+2018-05-21 14:09:33.328 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai+hoc&df=Content&rows=5} hits=6844 status=0 QTime=5
+2018-05-21 14:09:33.520 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=điêm+thi+dai+hoc&df=Content&rows=20} hits=6844 status=0 QTime=0
+2018-05-21 14:09:33.547 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=diem+thi+dai+hoc&df=Content&rows=5} hits=6844 status=0 QTime=0
+2018-05-21 14:22:07.066 INFO  (qtp580871917-16) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=Thằng+Ngĩa+ngáo+đá&df=Content&rows=20} hits=4167 status=0 QTime=58
+2018-05-21 14:22:51.550 INFO  (qtp580871917-13) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4269 status=0 QTime=0
+2018-05-21 14:23:03.259 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4269 status=0 QTime=0
+2018-05-21 14:23:04.345 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4269 status=0 QTime=0
+2018-05-21 14:23:26.301 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=g&df=Content&rows=5} hits=76 status=0 QTime=2
+2018-05-21 14:23:26.550 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=gi&df=Content&rows=5} hits=1631 status=0 QTime=1
+2018-05-21 14:23:26.670 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=gia&df=Content&rows=5} hits=5059 status=0 QTime=1
+2018-05-21 14:23:26.831 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=gi&df=Content&rows=5} hits=1631 status=0 QTime=0
+2018-05-21 14:23:26.847 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giá&df=Content&rows=5} hits=5059 status=0 QTime=0
+2018-05-21 14:23:26.859 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo&df=Content&rows=5} hits=2345 status=0 QTime=0
+2018-05-21 14:23:26.971 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo&df=Content&rows=5} hits=2345 status=0 QTime=0
+2018-05-21 14:23:28.278 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+d&df=Content&rows=5} hits=2473 status=0 QTime=1
+2018-05-21 14:23:28.557 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+du&df=Content&rows=5} hits=5789 status=0 QTime=1
+2018-05-21 14:23:29.576 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+duc&df=Content&rows=5} hits=3195 status=0 QTime=1
+2018-05-21 14:23:29.707 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+du&df=Content&rows=5} hits=5789 status=0 QTime=1
+2018-05-21 14:23:29.803 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+d&df=Content&rows=5} hits=2473 status=0 QTime=0
+2018-05-21 14:23:29.818 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:29.819 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dụ&df=Content&rows=5} hits=5789 status=0 QTime=0
+2018-05-21 14:23:29.862 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:30.913 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+g&df=Content&rows=5} hits=3240 status=0 QTime=1
+2018-05-21 14:23:31.200 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+go&df=Content&rows=5} hits=3602 status=0 QTime=1
+2018-05-21 14:23:31.434 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+goi&df=Content&rows=5} hits=3831 status=0 QTime=1
+2018-05-21 14:23:31.551 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+go&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.651 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=1
+2018-05-21 14:23:31.652 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gơ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.673 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gơ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.752 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gơ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.755 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=0
+2018-05-21 14:23:31.771 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gớ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.791 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gớ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:31.878 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gới&df=Content&rows=5} hits=3831 status=0 QTime=0
+2018-05-21 14:23:33.213 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gới&df=Content&rows=5} hits=3831 status=0 QTime=1
+2018-05-21 14:23:33.597 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gớ&df=Content&rows=5} hits=3602 status=0 QTime=0
+2018-05-21 14:23:33.869 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+g&df=Content&rows=5} hits=3240 status=0 QTime=0
+2018-05-21 14:23:34.884 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=0
+2018-05-21 14:23:35.101 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gio&df=Content&rows=5} hits=4425 status=0 QTime=1
+2018-05-21 14:23:35.338 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gioi&df=Content&rows=5} hits=4549 status=0 QTime=1
+2018-05-21 14:23:35.433 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gio&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:35.518 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gii&df=Content&rows=5} hits=3196 status=0 QTime=1
+2018-05-21 14:23:35.524 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:35.541 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:35.694 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơi&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:35.714 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:35.727 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơớ&df=Content&rows=5} hits=3195 status=0 QTime=2
+2018-05-21 14:23:35.743 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơớ&df=Content&rows=5} hits=3195 status=0 QTime=1
+2018-05-21 14:23:35.765 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=1
+2018-05-21 14:23:36.698 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+t&df=Content&rows=5} hits=3237 status=0 QTime=1
+2018-05-21 14:23:36.883 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+ti&df=Content&rows=5} hits=3508 status=0 QTime=2
+2018-05-21 14:23:37.120 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+tin&df=Content&rows=5} hits=5081 status=0 QTime=1
+2018-05-21 14:23:37.384 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+tinh&df=Content&rows=5} hits=5806 status=0 QTime=2
+2018-05-21 14:23:37.836 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+tin&df=Content&rows=5} hits=5081 status=0 QTime=0
+2018-05-21 14:23:38.015 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+ti&df=Content&rows=5} hits=3508 status=0 QTime=0
+2018-05-21 14:23:38.218 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới+t&df=Content&rows=5} hits=3237 status=0 QTime=0
+2018-05-21 14:23:38.424 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:38.615 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:38.827 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơớ&df=Content&rows=5} hits=3195 status=0 QTime=3
+2018-05-21 14:23:39.423 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:39.918 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=0
+2018-05-21 14:23:40.747 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gio&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:40.975 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gioi&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:41.117 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=0
+2018-05-21 14:23:41.145 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+gi&df=Content&rows=5} hits=4060 status=0 QTime=0
+2018-05-21 14:23:41.149 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:41.169 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:41.303 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:41.356 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơ&df=Content&rows=5} hits=4425 status=0 QTime=0
+2018-05-21 14:23:41.373 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơớ&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:41.390 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơớ&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:41.459 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:43.002 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:43.251 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:43.405 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giơới&df=Content&rows=5} hits=3195 status=0 QTime=0
+2018-05-21 14:23:44.229 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:44.825 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:45.048 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:45.260 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới&df=Content&rows=5} hits=4549 status=0 QTime=0
+2018-05-21 14:23:46.086 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+t&df=Content&rows=5} hits=4577 status=0 QTime=1
+2018-05-21 14:23:46.262 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+ti&df=Content&rows=5} hits=4775 status=0 QTime=2
+2018-05-21 14:23:46.526 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tin&df=Content&rows=5} hits=5721 status=0 QTime=1
+2018-05-21 14:23:46.721 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tinh&df=Content&rows=5} hits=6350 status=0 QTime=1
+2018-05-21 14:23:46.946 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+t&df=Content&rows=5} hits=4577 status=0 QTime=0
+2018-05-21 14:23:46.963 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+t&df=Content&rows=5} hits=4577 status=0 QTime=0
+2018-05-21 14:23:46.974 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tí&df=Content&rows=5} hits=4775 status=0 QTime=0
+2018-05-21 14:23:46.986 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=5} hits=6350 status=0 QTime=0
+2018-05-21 14:23:46.986 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tín&df=Content&rows=5} hits=5721 status=0 QTime=0
+2018-05-21 14:23:46.992 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+t&df=Content&rows=5} hits=4577 status=0 QTime=0
+2018-05-21 14:23:47.395 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=5} hits=6350 status=0 QTime=0
+2018-05-21 14:23:48.347 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=6350 status=0 QTime=0
+2018-05-21 14:23:54.968 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=6350 status=0 QTime=0
+2018-05-21 14:25:05.274 INFO  (qtp580871917-22) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4549 status=0 QTime=2
+2018-05-21 14:26:07.039 INFO  (qtp580871917-14) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điểm+thi+đại+học+bách+khoa&df=Content&rows=20} hits=5891 status=0 QTime=2
+2018-05-21 14:28:27.899 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Điểm+thi+đại+học+năm+2018&df=Content&rows=20} hits=6897 status=0 QTime=2
+2018-05-21 14:29:47.050 INFO  (qtp580871917-18) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Đặc+khu+kinh+êế&df=Content&rows=20} hits=3960 status=0 QTime=2
+2018-05-21 14:29:55.282 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Đặc+khu+kinh+êế&df=Content&rows=20} hits=3960 status=0 QTime=0
+2018-05-21 14:30:13.261 INFO  (qtp580871917-17) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=Sinh+viên+nên+khởi+nghiệp&df=Content&rows=20} hits=5360 status=0 QTime=1
+2018-05-21 14:30:44.379 INFO  (qtp580871917-20) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+nên+khởi+nghiệp+một+lần&df=Content&rows=20} hits=7036 status=0 QTime=2
+2018-05-21 14:30:58.086 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điểm+thi&df=Content&rows=20} hits=4652 status=0 QTime=1
+2018-05-21 14:31:19.477 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=K&df=Content&rows=5} hits=47 status=0 QTime=0
+2018-05-21 14:31:19.672 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Kh&df=Content&rows=5} hits=29 status=0 QTime=0
+2018-05-21 14:31:19.933 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Kho&df=Content&rows=5} hits=2232 status=0 QTime=0
+2018-05-21 14:31:20.120 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khoi&df=Content&rows=5} hits=2023 status=0 QTime=1
+2018-05-21 14:31:20.290 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khơi&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:20.487 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:27.201 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:27.435 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+n&df=Content&rows=5} hits=2048 status=0 QTime=1
+2018-05-21 14:31:27.613 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+ng&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:27.772 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+ngh&df=Content&rows=5} hits=2023 status=0 QTime=1
+2018-05-21 14:31:28.009 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghi&df=Content&rows=5} hits=3956 status=0 QTime=1
+2018-05-21 14:31:28.304 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghie&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:28.427 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiê&df=Content&rows=5} hits=2023 status=0 QTime=0
+2018-05-21 14:31:28.511 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiêp&df=Content&rows=5} hits=3213 status=0 QTime=1
+2018-05-21 14:31:28.760 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp&df=Content&rows=5} hits=3213 status=0 QTime=0
+2018-05-21 14:31:29.306 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp&df=Content&rows=5} hits=3213 status=0 QTime=0
+2018-05-21 14:31:32.223 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+m&df=Content&rows=5} hits=3292 status=0 QTime=0
+2018-05-21 14:31:32.394 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+ma&df=Content&rows=5} hits=5119 status=0 QTime=0
+2018-05-21 14:31:32.546 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mao&df=Content&rows=5} hits=3285 status=0 QTime=1
+2018-05-21 14:31:32.759 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo&df=Content&rows=5} hits=3285 status=0 QTime=0
+2018-05-21 14:31:33.057 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo&df=Content&rows=5} hits=3285 status=0 QTime=0
+2018-05-21 14:31:33.326 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+h&df=Content&rows=5} hits=3388 status=0 QTime=1
+2018-05-21 14:31:33.351 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điểm+thi+đại+học+bách+khoa&df=Content&rows=20} hits=5891 status=0 QTime=0
+2018-05-21 14:31:33.400 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo&df=Content&rows=5} hits=3285 status=0 QTime=0
+2018-05-21 14:31:33.414 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp&df=Content&rows=5} hits=3213 status=0 QTime=0
+2018-05-21 14:31:33.431 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+h&df=Content&rows=5} hits=3388 status=0 QTime=0
+2018-05-21 14:31:33.556 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hi&df=Content&rows=5} hits=3349 status=0 QTime=2
+2018-05-21 14:31:33.585 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp&df=Content&rows=5} hits=3213 status=0 QTime=0
+2018-05-21 14:31:33.594 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo&df=Content&rows=5} hits=3285 status=0 QTime=0
+2018-05-21 14:31:33.623 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hi&df=Content&rows=5} hits=3349 status=0 QTime=0
+2018-05-21 14:31:33.860 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hie&df=Content&rows=5} hits=3285 status=0 QTime=2
+2018-05-21 14:31:33.951 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiê&df=Content&rows=5} hits=3285 status=0 QTime=1
+2018-05-21 14:31:34.080 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiêm&df=Content&rows=5} hits=3748 status=0 QTime=1
+2018-05-21 14:31:34.226 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm&df=Content&rows=5} hits=3748 status=0 QTime=0
+2018-05-21 14:31:34.530 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm&df=Content&rows=5} hits=3748 status=0 QTime=0
+2018-05-21 14:31:35.601 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+n&df=Content&rows=5} hits=3766 status=0 QTime=2
+2018-05-21 14:31:35.860 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nh&df=Content&rows=5} hits=3749 status=0 QTime=2
+2018-05-21 14:31:36.119 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhu&df=Content&rows=5} hits=6177 status=0 QTime=1
+2018-05-21 14:31:36.393 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhun&df=Content&rows=5} hits=3752 status=0 QTime=1
+2018-05-21 14:31:36.477 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhung&df=Content&rows=5} hits=6807 status=0 QTime=1
+2018-05-21 14:31:37.023 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng&df=Content&rows=5} hits=6807 status=0 QTime=0
+2018-05-21 14:31:37.068 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng&df=Content&rows=5} hits=6807 status=0 QTime=0
+2018-05-21 14:31:39.696 INFO  (qtp580871917-20) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+c&df=Content&rows=5} hits=6835 status=0 QTime=1
+2018-05-21 14:31:39.837 INFO  (qtp580871917-18) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+co&df=Content&rows=5} hits=7521 status=0 QTime=2
+2018-05-21 14:31:39.978 INFO  (qtp580871917-14) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có&df=Content&rows=5} hits=7521 status=0 QTime=0
+2018-05-21 14:31:40.237 INFO  (qtp580871917-13) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có&df=Content&rows=5} hits=7521 status=0 QTime=0
+2018-05-21 14:31:40.567 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+l&df=Content&rows=5} hits=7526 status=0 QTime=3
+2018-05-21 14:31:40.846 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lo&df=Content&rows=5} hits=7534 status=0 QTime=2
+2018-05-21 14:31:40.994 INFO  (qtp580871917-16) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lơ&df=Content&rows=5} hits=7534 status=0 QTime=0
+2018-05-21 14:31:41.107 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lơi&df=Content&rows=5} hits=7531 status=0 QTime=2
+2018-05-21 14:31:41.359 INFO  (qtp580871917-22) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lợi&df=Content&rows=5} hits=7531 status=0 QTime=0
+2018-05-21 14:31:42.234 INFO  (qtp580871917-21) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lợi&df=Content&rows=5} hits=7531 status=0 QTime=1
+2018-05-21 14:31:42.261 INFO  (qtp580871917-17) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=Khởi+nghiệp+mạo+hiểm+nhưng+có+lợi&df=Content&rows=20} hits=7531 status=0 QTime=0
+2018-05-21 14:35:32.949 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điểm+thi+đại+học+bách+khoa&df=Content&rows=20} hits=5891 status=0 QTime=0
+2018-05-21 14:35:48.172 INFO  (qtp580871917-13) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=điểm+thi+đại+học&df=Content&rows=20} hits=5866 status=0 QTime=2
+2018-05-21 14:43:53.086 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=đại+học+bách+khoa+đào+tạo+những+gì&df=Content&rows=20} hits=6555 status=0 QTime=1
+2018-05-21 14:45:07.590 INFO  (qtp580871917-17) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=đại+học+bách+khoa+đào+tạo+những+gì&df=Content&rows=20} hits=6555 status=0 QTime=0
+2018-05-21 14:45:09.393 INFO  (qtp580871917-19) [   x:index_khong_dau] o.a.s.c.S.Request [index_khong_dau]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=6350 status=0 QTime=0
+2018-05-21 14:45:11.098 INFO  (qtp580871917-14) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=giáo+dục+giới+tính&df=Content&rows=20} hits=4549 status=0 QTime=0
+2018-05-21 14:45:31.654 INFO  (qtp580871917-20) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=giá+vàng&df=Content&rows=20} hits=5373 status=0 QTime=1
+2018-05-21 14:46:06.212 INFO  (qtp580871917-18) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=môi+trường&df=Content&rows=20} hits=4367 status=0 QTime=1
+2018-05-21 14:46:35.376 INFO  (qtp580871917-16) [   x:index_filter] o.a.s.c.S.Request [index_filter]  webapp=/solr path=/select params={q=giá+xăng&df=Content&rows=20} hits=5106 status=0 QTime=1
+2018-05-21 14:49:09.530 INFO  (qtp580871917-19) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+việt+nam+có+đang+lãng+phí+thời+gian+vô+ích+cho+mạng+xã+hội&df=Content&rows=20} hits=7596 status=0 QTime=2
+2018-05-21 14:49:41.218 INFO  (qtp580871917-18) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+việt+nam+có+đang+lãng+phí+thời+gian+vô+ích+cho+mạng+xã+hội&df=Content&rows=20} hits=7596 status=0 QTime=0
+2018-05-21 14:49:42.705 INFO  (qtp580871917-16) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+việt+nam+có+đang+lãng+phí+thời+gian+vô+ích+cho+mạng+xã+hội&df=Content&rows=20} hits=7596 status=0 QTime=0
+2018-05-21 14:49:44.752 INFO  (qtp580871917-17) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+việt+nam+có+đang+lãng+phí+thời+gian+vô+ích+cho+mạng+xã+hội&df=Content&rows=20} hits=7596 status=0 QTime=0
+2018-05-21 14:49:45.495 INFO  (qtp580871917-21) [   x:index_base] o.a.s.c.S.Request [index_base]  webapp=/solr path=/select params={q=sinh+viên+việt+nam+có+đang+lãng+phí+thời+gian+vô+ích+cho+mạng+xã+hội&df=Content&rows=20} hits=7596 status=0 QTime=0
